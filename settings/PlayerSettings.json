@@ -1,0 +1,23 @@
+{
+  "resolution": {
+    "designWidth": 1080,
+    "designHeight": 2400,
+    "scaleMode": "fixedwidth",
+    "alignV": "middle",
+    "screenMode": "vertical",
+    "backgroundColor": "rgba(0, 0, 0, 1)"
+  },
+  "3D": {
+    "lightClusterCount": {}
+  },
+  "physics2D": {
+    "gravity": {}
+  },
+  "modules": {
+    "laya.ui": true,
+    "laya.d3": true
+  },
+  "splash": {
+    "fit": "center"
+  }
+}

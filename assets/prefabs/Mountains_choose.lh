@@ -1,0 +1,216 @@
+{
+  "_$ver": 1,
+  "_$id": "qtpnl3eq",
+  "_$type": "Box",
+  "name": "Mountains_choose",
+  "width": 1080,
+  "height": 2400,
+  "_mouseState": 2,
+  "_$comp": [
+    {
+      "_$type": "121b8e8b-afa0-4b75-8626-a9d2e659e40d",
+      "scriptPath": "../src/UI/Mountains/Mountains_choose.ts",
+      "text": "",
+      "background": {
+        "_$ref": "sxtoubv3"
+      },
+      "Title_Mountainschoose_Panel": {
+        "_$ref": "7m8k1lae"
+      },
+      "Title_Mountainschoose_Label": {
+        "_$ref": "pco67i2z"
+      },
+      "Mountains_List": {
+        "_$ref": "nnktdpbp"
+      },
+      "ItemBox": {
+        "_$ref": "2f2jl3t4"
+      },
+      "Itembg": {
+        "_$ref": "wgazic33"
+      },
+      "Icon": {
+        "_$ref": "7zvr1hxx"
+      },
+      "Chapter_number": {
+        "_$ref": "fzh8lk16"
+      },
+      "Chpter_name_Panel": {
+        "_$ref": "lp2cikhg"
+      },
+      "Chpter_name": {
+        "_$ref": "fslc694f"
+      },
+      "Lock": {
+        "_$ref": "vhgewbe1"
+      },
+      "Close_Mountains": {
+        "_$ref": "6759mp2n"
+      }
+    }
+  ],
+  "_$child": [
+    {
+      "_$id": "sxtoubv3",
+      "_$type": "Image",
+      "name": "background",
+      "width": 1080,
+      "height": 2400,
+      "skin": "res://ba5481cf-194d-407a-b138-4d3367d078e7",
+      "color": "#ffffff"
+    },
+    {
+      "_$id": "7m8k1lae",
+      "_$type": "Panel",
+      "name": "Title_Mountainschoose_Panel",
+      "x": 48,
+      "y": 100,
+      "width": 984,
+      "height": 91,
+      "_mouseState": 2,
+      "scrollType": 2,
+      "_$child": [
+        {
+          "_$id": "pco67i2z",
+          "_$type": "Label",
+          "name": "Title_Mountainschoose_Label",
+          "x": 112,
+          "y": 13,
+          "width": 760,
+          "height": 65,
+          "text": "山经",
+          "font": "思源宋体",
+          "fontSize": 64,
+          "color": "rgba(255, 244, 7, 1)",
+          "fitContent": "height",
+          "bold": true,
+          "align": "center",
+          "valign": "middle",
+          "wordWrap": true,
+          "padding": "0,0,0,0",
+          "stroke": 10
+        }
+      ]
+    },
+    {
+      "_$id": "nnktdpbp",
+      "_$type": "List",
+      "name": "Mountains_List",
+      "x": 22,
+      "y": 280,
+      "width": 1036,
+      "height": 1840,
+      "_mouseState": 2,
+      "itemTemplate": {
+        "_$ref": "2f2jl3t4",
+        "_$tmpl": "itemRender"
+      },
+      "repeatX": 1,
+      "repeatY": 7,
+      "elasticEnabled": true,
+      "spaceY": 15,
+      "scrollType": 2,
+      "_$child": [
+        {
+          "_$id": "2f2jl3t4",
+          "_$type": "Box",
+          "name": "ItemBox",
+          "width": 1036,
+          "height": 240,
+          "_mouseState": 2,
+          "_$child": [
+            {
+              "_$id": "wgazic33",
+              "_$type": "Image",
+              "name": "Itembg",
+              "width": 1036,
+              "height": 240,
+              "skin": "res://ba4a3a16-9615-4f70-98e4-b55a6dbb5fb2",
+              "color": "#ffffff"
+            },
+            {
+              "_$id": "7zvr1hxx",
+              "_$type": "Image",
+              "name": "Icon",
+              "x": 25,
+              "y": 45,
+              "width": 150,
+              "height": 150,
+              "skin": "res://2413de71-d271-4442-9ce4-c3a17d7e927f",
+              "color": "#ffffff"
+            },
+            {
+              "_$id": "fzh8lk16",
+              "_$type": "Label",
+              "name": "Chapter_number",
+              "x": 175,
+              "y": 60,
+              "width": 360,
+              "height": 120,
+              "text": "第一章",
+              "font": "思源宋体",
+              "fontSize": 84,
+              "color": "#FFFFFF",
+              "bold": true,
+              "align": "center",
+              "valign": "middle",
+              "wordWrap": true,
+              "padding": "0,0,0,0"
+            },
+            {
+              "_$id": "lp2cikhg",
+              "_$type": "Panel",
+              "name": "Chpter_name_Panel",
+              "x": 535,
+              "y": 60,
+              "width": 500,
+              "height": 120,
+              "_mouseState": 2,
+              "scrollType": 2,
+              "_$child": [
+                {
+                  "_$id": "fslc694f",
+                  "_$type": "Label",
+                  "name": "Chpter_name",
+                  "y": 27,
+                  "width": 500,
+                  "height": 65,
+                  "text": "第一章是个毛",
+                  "font": "思源宋体",
+                  "fontSize": 64,
+                  "color": "#FFFFFF",
+                  "fitContent": "height",
+                  "align": "center",
+                  "valign": "middle",
+                  "wordWrap": true,
+                  "padding": "0,0,0,0"
+                }
+              ]
+            },
+            {
+              "_$id": "vhgewbe1",
+              "_$type": "Image",
+              "name": "Lock",
+              "x": 370,
+              "width": 240,
+              "height": 240,
+              "visible": false,
+              "skin": "res://54da2a42-b647-40e1-8a52-6c348056e20f",
+              "color": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_$id": "6759mp2n",
+      "_$type": "Image",
+      "name": "Close_Mountains",
+      "x": 25,
+      "width": 180,
+      "height": 180,
+      "skin": "res://7120a390-8d5c-4181-83e1-b6a788735117",
+      "color": "#ffffff"
+    }
+  ]
+}
