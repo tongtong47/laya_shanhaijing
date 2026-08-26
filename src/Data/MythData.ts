@@ -10,6 +10,8 @@ export interface IMythRow {
     img: string;
     /** 现代译文词条标识 */
     definition_info: string;
+    /** 原著文本。 */
+    Original_info: string;
     [key: string]: any;
 }
 
@@ -46,10 +48,10 @@ export class MythData {
                 if (!item || typeof item.id !== "number") {
                     continue;
                 }
-                // 剔除纯备注字段（type = "desc"）：name_desc / definition_info_desc / Original_info
+                // 剔除纯备注字段；Original_info 是阅读页需要展示的正文，必须保留。
                 const row: any = {};
                 for (const k in item) {
-                    if (k === "Original_info" || k.endsWith("_desc")) {
+                    if (k.endsWith("_desc")) {
                         continue;
                     }
                     row[k] = item[k];

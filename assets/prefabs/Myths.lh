@@ -1,0 +1,307 @@
+{
+  "_$ver": 1,
+  "_$id": "w8iml92f",
+  "_$type": "Box",
+  "name": "Myths",
+  "width": 1080,
+  "height": 2400,
+  "_mouseState": 2,
+  "_$comp": [
+    {
+      "_$type": "bb0146dc-774b-46dd-b0a4-1be535b8dd25",
+      "scriptPath": "../src/UI/Myths/Myths.ts",
+      "background": {
+        "_$ref": "qerx8wsy"
+      },
+      "Chapter_Image_List": {
+        "_$ref": "revegz4w"
+      },
+      "Chapter_Image_Box": {
+        "_$ref": "4s4f1uzh"
+      },
+      "Chapter_Image": {
+        "_$ref": "v5jrcozp"
+      },
+      "Title_Myths_Panel": {
+        "_$ref": "5kysli6g"
+      },
+      "Title_Myths_Label": {
+        "_$ref": "s3x1ci39"
+      },
+      "infobg": {
+        "_$ref": "xhoiw9bx"
+      },
+      "Botton_Definition_a": {
+        "_$ref": "vzpp9n42"
+      },
+      "Botton_Definition_m": {
+        "_$ref": "w6ndda4z"
+      },
+      "Botton_Definition_Label": {
+        "_$ref": "m4cdkf1r"
+      },
+      "Botton_Original_a": {
+        "_$ref": "a2pzm7dc"
+      },
+      "Botton_Original_m": {
+        "_$ref": "wht61wrq"
+      },
+      "Botton_Original_Label": {
+        "_$ref": "v16nb5rx"
+      },
+      "Definition_Panel": {
+        "_$ref": "gfkays6f"
+      },
+      "Definition_Info_Label": {
+        "_$ref": "vs6wmnhi"
+      },
+      "Original_Panel": {
+        "_$ref": "syywavxy"
+      },
+      "Original_Info_Label": {
+        "_$ref": "zfm5rdb7"
+      },
+      "Close_Myths": {
+        "_$ref": "xjmuwlvo"
+      }
+    }
+  ],
+  "_$child": [
+    {
+      "_$id": "qerx8wsy",
+      "_$type": "Image",
+      "name": "background",
+      "width": 1080,
+      "height": 2400,
+      "skin": "res://ba5481cf-194d-407a-b138-4d3367d078e7",
+      "color": "#ffffff"
+    },
+    {
+      "_$id": "revegz4w",
+      "_$type": "List",
+      "name": "Chapter_Image_List",
+      "y": 200,
+      "width": 1080,
+      "height": 1080,
+      "_mouseState": 2,
+      "itemTemplate": {
+        "_$ref": "4s4f1uzh",
+        "_$tmpl": "itemRender"
+      },
+      "repeatX": 1,
+      "repeatY": 1,
+      "elasticEnabled": true,
+      "spaceX": 15,
+      "scrollType": 1,
+      "_$child": [
+        {
+          "_$id": "4s4f1uzh",
+          "_$type": "Box",
+          "name": "Chapter_Image_Box",
+          "width": 1080,
+          "height": 1080,
+          "_$child": [
+            {
+              "_$id": "v5jrcozp",
+              "_$type": "Image",
+              "name": "Chapter_Image",
+              "x": 28,
+              "y": 28,
+              "width": 1024,
+              "height": 1024,
+              "color": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_$id": "5kysli6g",
+      "_$type": "Panel",
+      "name": "Title_Myths_Panel",
+      "y": 100,
+      "width": 1080,
+      "height": 91,
+      "_mouseState": 2,
+      "scrollType": 2,
+      "_$child": [
+        {
+          "_$id": "s3x1ci39",
+          "_$type": "Label",
+          "name": "Title_Myths_Label",
+          "y": 13,
+          "width": 1080,
+          "height": 65,
+          "text": "神话·第一章·青丘之山",
+          "font": "思源宋体",
+          "fontSize": 64,
+          "color": "rgba(255, 244, 7, 1)",
+          "fitContent": "height",
+          "bold": true,
+          "align": "center",
+          "valign": "middle",
+          "wordWrap": true,
+          "padding": "0,0,0,0",
+          "stroke": 10
+        }
+      ]
+    },
+    {
+      "_$id": "xhoiw9bx",
+      "_$type": "Image",
+      "name": "infobg",
+      "y": 1280,
+      "width": 1080,
+      "height": 1080,
+      "_mouseState": 2,
+      "skin": "res://c2ebd901-0f84-435b-a9be-4f0eb2ad44a7",
+      "color": "#ffffff",
+      "_$child": [
+        {
+          "_$id": "vzpp9n42",
+          "_$type": "Image",
+          "name": "Botton_Definition_a",
+          "x": 150,
+          "y": 90,
+          "width": 360,
+          "height": 110,
+          "skin": "res://7185d8ce-dfc2-4d8c-a7d2-0b2aeee7af96",
+          "color": "#ffffff",
+          "_$child": [
+            {
+              "_$id": "w6ndda4z",
+              "_$type": "Image",
+              "name": "Botton_Definition_m",
+              "width": 360,
+              "height": 110,
+              "skin": "res://59ae6c4e-2f4d-41ef-84e7-93c8e137269f",
+              "color": "#ffffff"
+            },
+            {
+              "_$id": "m4cdkf1r",
+              "_$type": "Label",
+              "name": "Botton_Definition_Label",
+              "width": 360,
+              "height": 110,
+              "text": "释义",
+              "font": "思源宋体",
+              "fontSize": 48,
+              "color": "rgba(0, 0, 0, 1)",
+              "bold": true,
+              "align": "center",
+              "valign": "middle",
+              "wordWrap": true,
+              "padding": "0,0,0,0"
+            }
+          ]
+        },
+        {
+          "_$id": "a2pzm7dc",
+          "_$type": "Image",
+          "name": "Botton_Original_a",
+          "x": 570,
+          "y": 90,
+          "width": 360,
+          "height": 110,
+          "skin": "res://7185d8ce-dfc2-4d8c-a7d2-0b2aeee7af96",
+          "color": "#ffffff",
+          "_$child": [
+            {
+              "_$id": "wht61wrq",
+              "_$type": "Image",
+              "name": "Botton_Original_m",
+              "width": 360,
+              "height": 110,
+              "skin": "res://59ae6c4e-2f4d-41ef-84e7-93c8e137269f",
+              "color": "#ffffff"
+            },
+            {
+              "_$id": "v16nb5rx",
+              "_$type": "Label",
+              "name": "Botton_Original_Label",
+              "width": 360,
+              "height": 110,
+              "text": "原著",
+              "font": "思源宋体",
+              "fontSize": 48,
+              "color": "rgba(0, 0, 0, 1)",
+              "bold": true,
+              "align": "center",
+              "valign": "middle",
+              "wordWrap": true,
+              "padding": "0,0,0,0"
+            }
+          ]
+        },
+        {
+          "_$id": "gfkays6f",
+          "_$type": "Panel",
+          "name": "Definition_Panel",
+          "x": 89,
+          "y": 235,
+          "width": 910,
+          "height": 720,
+          "_mouseState": 2,
+          "scrollType": 2,
+          "_$child": [
+            {
+              "_$id": "vs6wmnhi",
+              "_$type": "Label",
+              "name": "Definition_Info_Label",
+              "width": 910,
+              "height": 51,
+              "text": "啊啊啊啊啊啊啊啊啊啊啊啊",
+              "font": "思源宋体",
+              "fontSize": 50,
+              "color": "rgba(8, 8, 142, 1)",
+              "fitContent": "height",
+              "html": true,
+              "valign": "top",
+              "wordWrap": true,
+              "padding": "0,0,0,0"
+            }
+          ]
+        },
+        {
+          "_$id": "syywavxy",
+          "_$type": "Panel",
+          "name": "Original_Panel",
+          "x": 89,
+          "y": 235,
+          "width": 910,
+          "height": 720,
+          "_mouseState": 2,
+          "scrollType": 2,
+          "_$child": [
+            {
+              "_$id": "zfm5rdb7",
+              "_$type": "Label",
+              "name": "Original_Info_Label",
+              "width": 910,
+              "height": 51,
+              "text": "啊啊啊啊啊啊啊啊啊啊啊啊",
+              "font": "思源宋体",
+              "fontSize": 50,
+              "color": "rgba(8, 8, 142, 1)",
+              "fitContent": "height",
+              "html": true,
+              "valign": "top",
+              "wordWrap": true,
+              "padding": "0,0,0,0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_$id": "xjmuwlvo",
+      "_$type": "Image",
+      "name": "Close_Myths",
+      "x": 25,
+      "width": 180,
+      "height": 180,
+      "skin": "res://7120a390-8d5c-4181-83e1-b6a788735117",
+      "color": "#ffffff"
+    }
+  ]
+}

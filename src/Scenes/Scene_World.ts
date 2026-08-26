@@ -5,6 +5,12 @@ import { I18N } from "../Data/I18N";
 @regClass()
 export class Scene_World extends Laya.Script {
 
+    private static readonly SECTION_BGMS: Record<number, string> = {
+        1: "resources/Bgms/Mounts.mp3",
+        2: "resources/Bgms/Seas.mp3",
+        3: "resources/Bgms/Myths.mp3",
+    };
+
     @property({ type: Laya.Sprite })
     public background: Laya.Sprite = null;
 
@@ -46,6 +52,8 @@ export class Scene_World extends Laya.Script {
     public Mountains_choose: Laya.Sprite = null;
     @property({ type: Laya.Sprite })
     public Seas_choose: Laya.Sprite = null;
+    @property({ type: Laya.Sprite })
+    public Myths_choose: Laya.Sprite = null;
 
     private _tabs: Array<{
         a: Laya.Image;
@@ -59,6 +67,9 @@ export class Scene_World extends Laya.Script {
 
     /** 当前选中的页签索引（0=主页,1=山经,2=海经,3=神话） */
     private _currentTab: number = 0;
+
+    /** 当前章节分类 BGM，避免重复点击同一页签时从头播放。 */
+    private _currentBgm: string = "";
 
     /** Bigmap 拖动相关 */
     private _dragging: boolean = false;
@@ -84,6 +95,9 @@ export class Scene_World extends Laya.Script {
         if (this.Seas_choose) {
             this.Seas_choose.visible = false;
         }
+        if (this.Myths_choose) {
+            this.Myths_choose.visible = false;
+        }
 
         // 注册语言变更监听，切换语言时页签文本自动刷新
         I18N.inst.onLangChanged(this, this._onLangChanged);
@@ -93,6 +107,10 @@ export class Scene_World extends Laya.Script {
         I18N.inst.offLangChanged(this, this._onLangChanged);
         this._unbindTabClicks();
         this._disableBigmapDrag();
+        if (this._currentBgm) {
+            Laya.SoundManager.stopMusic();
+            this._currentBgm = "";
+        }
     }
 
     /** 语言切换：仅刷新各页签 label 文本，不动选中状态与样式 */
@@ -135,6 +153,9 @@ export class Scene_World extends Laya.Script {
         }
         if (!this.Seas_choose) {
             this.Seas_choose = this.owner.getChildByName("Seas_choose") as unknown as Laya.Sprite;
+        }
+        if (!this.Myths_choose) {
+            this.Myths_choose = this.owner.getChildByName("Myths_choose") as unknown as Laya.Sprite;
         }
     }
     private _bind<T extends Laya.Node>(name: string, field: T): T {
@@ -181,16 +202,39 @@ export class Scene_World extends Laya.Script {
     }
 
     private _onTabClick(idx: number): void {
+        if (this.Mountains_choose) this.Mountains_choose.visible = false;
+        if (this.Seas_choose) this.Seas_choose.visible = false;
+        if (this.Myths_choose) this.Myths_choose.visible = false;
         if (idx === 1) {
-            this._openChoose(this.Mountains_choose, "prefabs/Mountains_choose.lh", this.Seas_choose);
+            this._openChoose(this.Mountains_choose, "prefabs/Mountains_choose.lh", null);
         }
         if (idx === 2) {
-            this._openChoose(this.Seas_choose, "prefabs/Seas_choose.lh", this.Mountains_choose);
+            this._openChoose(this.Seas_choose, "prefabs/Seas_choose.lh", null);
         }
+        if (idx === 3) {
+            this._openChoose(this.Myths_choose, "prefabs/Myths_choose.lh", null);
+        }
+        this._switchSectionBgm(idx);
         if (idx === this._currentTab) {
             return;
         }
         this._selectTab(idx);
+    }
+
+    /** 切换分类时替换背景音乐；回到主页时停止分类 BGM。 */
+    private _switchSectionBgm(tabIndex: number): void {
+        const url = Scene_World.SECTION_BGMS[tabIndex] || "";
+        if (!url) {
+            if (this._currentBgm) {
+                Laya.SoundManager.stopMusic();
+                this._currentBgm = "";
+            }
+            return;
+        }
+        if (url === this._currentBgm) return;
+        this._currentBgm = url;
+        Laya.SoundManager.playMusic(url, 0);
+        console.log("[BGM] 世界分类切换：", url);
     }
 
     private _openChoose(target: Laya.Sprite, url: string, another: Laya.Sprite): void {

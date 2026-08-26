@@ -3,14 +3,6 @@ const { regClass, property } = Laya;
 import { I18N } from "../../Data/I18N";
 import { ChapterManager } from "../../Data/ChapterManager";
 
-/**
- * 山经阅读界面（Mountains）：
- * - 释义/原著两个页签（Botton_Definition_a / Botton_Original_a）常显；
- *   选中谁的 _m 标记显示，另一个的 _m 隐藏；
- *   同时切换 Definition_Panel / Original_Panel 两个内容容器。
- * - Original_Info_Label 直接显示山经表 Original_info（原著文本）；
- *   Definition_Info_Label 显示 definition_info 键值索引的多语言文本。
- */
 @regClass()
 export class Mountains extends Laya.Script {
     // ==================== 组件变量声明 ====================

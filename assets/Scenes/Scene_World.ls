@@ -63,6 +63,9 @@
       },
       "Seas_choose": {
         "_$ref": "1l8zv4cp"
+      },
+      "Myths_choose": {
+        "_$ref": "2xqui0wk"
       }
     }
   ],
@@ -288,6 +291,24 @@
       "_$id": "s3i898i0",
       "_$prefab": "f697a919-bc59-4105-9fa6-6e1c7deb1c24",
       "name": "Seas",
+      "active": true,
+      "x": 0,
+      "y": 0,
+      "visible": false
+    },
+    {
+      "_$id": "2xqui0wk",
+      "_$prefab": "237de77a-83a2-4478-be3a-458233fd1da9",
+      "name": "Myths_choose",
+      "active": true,
+      "x": 0,
+      "y": 0,
+      "visible": false
+    },
+    {
+      "_$id": "z9q7ah7z",
+      "_$prefab": "733fe875-1359-41f9-b9b0-4773a2c36a09",
+      "name": "Myths",
       "active": true,
       "x": 0,
       "y": 0,

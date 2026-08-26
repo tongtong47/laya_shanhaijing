@@ -2,7 +2,7 @@ $ErrorActionPreference = 'Stop'
 
 function Get-ArchiveDirectory {
     $dot = [string][char]0x00B7
-    return 'E:\Yijue\shanhaijing' + $dot + 'shijie\Doc\GameExcels'
+    return 'E:\Yijue\Shanhaijing_laya\Doc\GameExcels'
 }
 
 function Release-ComObject($value) {
