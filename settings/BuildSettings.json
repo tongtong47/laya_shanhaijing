@@ -1,4 +1,17 @@
 {
-  "name": "LayaProject1",
-  "startupScene": "res://9b931ecf-fde9-44dd-acf3-15f8dc807965"
+  "name": "山海经：世界",
+  "startupScene": "res://9b931ecf-fde9-44dd-acf3-15f8dc807965",
+  "includedScenes": [
+    "res://940ea661-800b-4fd0-8c99-3c170302cac5",
+    "res://6c7461b4-8b8e-4c75-bd0a-7847c5288c4b"
+  ],
+  "android": {
+    "targetArchitectures": {
+      "ARMv7": true,
+      "ARM64": false,
+      "x86": false,
+      "x86-64": false
+    },
+    "exportFormat": "APK"
+  }
 }
