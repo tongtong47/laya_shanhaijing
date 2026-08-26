@@ -33,7 +33,7 @@ export class Scene_load extends Laya.Script {
     /** 粒子对象数组 */
     private _particles: Laya.Sprite[] = [];
     /** 粒子数量 */
-    private static readonly PARTICLE_COUNT: number = 18;
+    private static readonly PARTICLE_COUNT: number = 25;
     /** 粒子颜色（金色系） */
     private static readonly PARTICLE_COLORS: string[] = ["#FFD700", "#FFC107", "#FFE066", "#FFB300", "#FFF3B0", "#FFAA00"];
 
