@@ -42,7 +42,9 @@ export class ChapterManager {
         for (const [label, url, parser] of tasks) {
             try {
                 const raw = await Laya.loader.load(url, { type: "json" });
-                parser(raw);
+                // Laya.loader 加载 JSON 资源可能返回 TextResource 对象，需取出 .data 才是实际数组数据
+                const data = raw instanceof Laya.TextResource ? (raw as any).data : raw;
+                parser(data);
                 console.log(
                     `[ChapterManager] 加载${label}表：`,
                     url,

@@ -11,6 +11,8 @@ export interface ISeaRow {
     img: string;
     /** 现代译文词条标识 */
     definition_info: string;
+    /** 原著文本（表内虽标记为 desc，但属于界面正文，必须保留） */
+    Original_info: string;
     [key: string]: any;
 }
 
@@ -47,10 +49,11 @@ export class SeaData {
                 if (!item || typeof item.id !== "number") {
                     continue;
                 }
-                // 剔除纯备注字段（type = "desc"）：name_desc / definition_info_desc / Original_info
+                // 剔除纯备注字段：name_desc / definition_info_desc；保留 Original_info 正文
                 const row: any = {};
                 for (const k in item) {
-                    if (k === "Original_info" || k.endsWith("_desc")) {
+                    // Original_info 虽然在表头中标为 desc，但它是需要展示的原著正文。
+                    if (k.endsWith("_desc")) {
                         continue;
                     }
                     row[k] = item[k];

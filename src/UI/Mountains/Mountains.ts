@@ -1,10 +1,15 @@
 const { regClass, property } = Laya;
 
+import { I18N } from "../../Data/I18N";
+import { ChapterManager } from "../../Data/ChapterManager";
+
 /**
  * 山经阅读界面（Mountains）：
- * - 声明并挂载所有组件；
- * - 点击 Close_Mountains 关闭该界面；
- * - 其余组件（章节列表、释义/原著页签等）暂不开发交互。
+ * - 释义/原著两个页签（Botton_Definition_a / Botton_Original_a）常显；
+ *   选中谁的 _m 标记显示，另一个的 _m 隐藏；
+ *   同时切换 Definition_Panel / Original_Panel 两个内容容器。
+ * - Original_Info_Label 直接显示山经表 Original_info（原著文本）；
+ *   Definition_Info_Label 显示 definition_info 键值索引的多语言文本。
  */
 @regClass()
 export class Mountains extends Laya.Script {
@@ -73,6 +78,13 @@ export class Mountains extends Laya.Script {
     @property({ type: Laya.Image })
     public Close_Mountains: Laya.Image = null;
 
+    // ==================== 内部状态 ====================
+
+    /** 当前章节 id（由外部 show(chapterId) 设置，默认 1） */
+    private _currentChapterId: number = 1;
+    /** 当前页签：definition(释义) / original(原著)，默认释义 */
+    private _currentTab: "definition" | "original" = "definition";
+
     // ==================== 生命周期 ====================
 
     onAwake(): void {
@@ -82,6 +94,63 @@ export class Mountains extends Laya.Script {
     onStart(): void {
         if (this.Close_Mountains) {
             this.Close_Mountains.on(Laya.Event.CLICK, this, this._onCloseClick);
+        }
+        // 页签按钮点击事件（两按钮常显，仅切换高亮与内容面板）
+        if (this.Botton_Definition_a) {
+            this.Botton_Definition_a.on(Laya.Event.CLICK, this, () => this.setTab("definition"));
+        }
+        if (this.Botton_Original_a) {
+            this.Botton_Original_a.on(Laya.Event.CLICK, this, () => this.setTab("original"));
+        }
+        // 初次进入默认显示释义页签
+        this.setTab(this._currentTab);
+    }
+
+    /**
+     * 外部打开本界面并指定章节（可选）；同时刷新内容。
+     */
+    public show(chapterId?: number): void {
+        if (typeof chapterId === "number") {
+            this._currentChapterId = chapterId;
+        }
+        this.setTab(this._currentTab);
+    }
+
+    /**
+     * 切换页签：选中态 _m 标记互斥显示，并切换对应内容面板。
+     */
+    public setTab(tab: "definition" | "original"): void {
+        this._currentTab = tab;
+
+        const isDefinition = tab === "definition";
+
+        // 选中态标记互斥：选中者 _m 显示，另一者隐藏
+        if (this.Botton_Definition_m) this.Botton_Definition_m.visible = isDefinition;
+        if (this.Botton_Original_m) this.Botton_Original_m.visible = !isDefinition;
+
+        // 内容面板互斥显示
+        if (this.Definition_Panel) this.Definition_Panel.visible = isDefinition;
+        if (this.Original_Panel) this.Original_Panel.visible = !isDefinition;
+
+        this._refreshContent();
+    }
+
+    /** 根据当前章节与页签刷新文本框内容 */
+    private _refreshContent(): void {
+        const row = ChapterManager.inst.mountains.getRow(this._currentChapterId);
+        if (!row) {
+            if (this.Definition_Info_Label) this.Definition_Info_Label.text = "";
+            if (this.Original_Info_Label) this.Original_Info_Label.text = "";
+            return;
+        }
+
+        // 释义：definition_info 为键值，索引多语言文本
+        if (this.Definition_Info_Label) {
+            this.Definition_Info_Label.text = I18N.inst.t(row.definition_info);
+        }
+        // 原著：直接显示 Original_info 字段原始文本
+        if (this.Original_Info_Label) {
+            this.Original_Info_Label.text = row.Original_info || "";
         }
     }
 

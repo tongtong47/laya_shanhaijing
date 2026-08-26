@@ -60,6 +60,9 @@
       },
       "Mountains_choose": {
         "_$ref": "vh0qz7kg"
+      },
+      "Seas_choose": {
+        "_$ref": "1l8zv4cp"
       }
     }
   ],
@@ -267,6 +270,24 @@
       "_$id": "90ch4ab3",
       "_$prefab": "0e47285c-c9b6-485b-8ffb-1b2f2e4d5a26",
       "name": "Mountains",
+      "active": true,
+      "x": 0,
+      "y": 0,
+      "visible": false
+    },
+    {
+      "_$id": "1l8zv4cp",
+      "_$prefab": "e8060520-89e6-486c-a64d-2be2b8c6bbc3",
+      "name": "Seas_choose",
+      "active": true,
+      "x": 0,
+      "y": 0,
+      "visible": false
+    },
+    {
+      "_$id": "s3i898i0",
+      "_$prefab": "f697a919-bc59-4105-9fa6-6e1c7deb1c24",
+      "name": "Seas",
       "active": true,
       "x": 0,
       "y": 0,

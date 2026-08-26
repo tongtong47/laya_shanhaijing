@@ -1,0 +1,215 @@
+{
+  "_$ver": 1,
+  "_$id": "vswkoetx",
+  "_$type": "Box",
+  "name": "Seas_choose",
+  "width": 1080,
+  "height": 2400,
+  "_mouseState": 2,
+  "_$comp": [
+    {
+      "_$type": "550732f5-2d2d-4005-9d1e-b94aac5c36a8",
+      "scriptPath": "../src/UI/Seas/Seas_choose.ts",
+      "background": {
+        "_$ref": "7ye4r7zp"
+      },
+      "Title_Seaschoose_Panel": {
+        "_$ref": "etvpkdck"
+      },
+      "Title_Seaschoose_Label": {
+        "_$ref": "lhm11vpo"
+      },
+      "Seas_List": {
+        "_$ref": "kx62ykag"
+      },
+      "ItemBox": {
+        "_$ref": "4fxt1i5x"
+      },
+      "Itembg": {
+        "_$ref": "365d4nzd"
+      },
+      "Icon": {
+        "_$ref": "tg1ru1tf"
+      },
+      "Chapter_number": {
+        "_$ref": "7nrc39gz"
+      },
+      "Chpter_name_Panel": {
+        "_$ref": "as21n57q"
+      },
+      "Chpter_name": {
+        "_$ref": "si8jutgd"
+      },
+      "Lock": {
+        "_$ref": "0el2te6f"
+      },
+      "Close_Seas": {
+        "_$ref": "8rrmrpnv"
+      }
+    }
+  ],
+  "_$child": [
+    {
+      "_$id": "7ye4r7zp",
+      "_$type": "Image",
+      "name": "background",
+      "width": 1080,
+      "height": 2400,
+      "skin": "res://ba5481cf-194d-407a-b138-4d3367d078e7",
+      "color": "#ffffff"
+    },
+    {
+      "_$id": "etvpkdck",
+      "_$type": "Panel",
+      "name": "Title_Mountainschoose_Panel",
+      "x": 48,
+      "y": 100,
+      "width": 984,
+      "height": 91,
+      "_mouseState": 2,
+      "scrollType": 2,
+      "_$child": [
+        {
+          "_$id": "lhm11vpo",
+          "_$type": "Label",
+          "name": "Title_Seaschoose_Label",
+          "x": 112,
+          "y": 13,
+          "width": 760,
+          "height": 65,
+          "text": "海经",
+          "font": "思源宋体",
+          "fontSize": 64,
+          "color": "rgba(255, 244, 7, 1)",
+          "fitContent": "height",
+          "bold": true,
+          "align": "center",
+          "valign": "middle",
+          "wordWrap": true,
+          "padding": "0,0,0,0",
+          "stroke": 10
+        }
+      ]
+    },
+    {
+      "_$id": "kx62ykag",
+      "_$type": "List",
+      "name": "Seas_List",
+      "x": 22,
+      "y": 280,
+      "width": 1036,
+      "height": 1840,
+      "_mouseState": 2,
+      "itemTemplate": {
+        "_$ref": "4fxt1i5x",
+        "_$tmpl": "itemRender"
+      },
+      "repeatX": 1,
+      "repeatY": 7,
+      "elasticEnabled": true,
+      "spaceY": 15,
+      "scrollType": 2,
+      "_$child": [
+        {
+          "_$id": "4fxt1i5x",
+          "_$type": "Box",
+          "name": "ItemBox",
+          "width": 1036,
+          "height": 240,
+          "_mouseState": 2,
+          "_$child": [
+            {
+              "_$id": "365d4nzd",
+              "_$type": "Image",
+              "name": "Itembg",
+              "width": 1036,
+              "height": 240,
+              "skin": "res://ba4a3a16-9615-4f70-98e4-b55a6dbb5fb2",
+              "color": "#ffffff"
+            },
+            {
+              "_$id": "tg1ru1tf",
+              "_$type": "Image",
+              "name": "Icon",
+              "x": 25,
+              "y": 45,
+              "width": 150,
+              "height": 150,
+              "skin": "res://b28a08bc-c995-429a-a35c-b29d4bb9c6e2",
+              "color": "#ffffff"
+            },
+            {
+              "_$id": "7nrc39gz",
+              "_$type": "Label",
+              "name": "Chapter_number",
+              "x": 175,
+              "y": 60,
+              "width": 360,
+              "height": 120,
+              "text": "第一章",
+              "font": "思源宋体",
+              "fontSize": 84,
+              "color": "#FFFFFF",
+              "bold": true,
+              "align": "center",
+              "valign": "middle",
+              "wordWrap": true,
+              "padding": "0,0,0,0"
+            },
+            {
+              "_$id": "as21n57q",
+              "_$type": "Panel",
+              "name": "Chpter_name_Panel",
+              "x": 535,
+              "y": 60,
+              "width": 500,
+              "height": 120,
+              "_mouseState": 2,
+              "scrollType": 2,
+              "_$child": [
+                {
+                  "_$id": "si8jutgd",
+                  "_$type": "Label",
+                  "name": "Chpter_name",
+                  "y": 27,
+                  "width": 500,
+                  "height": 65,
+                  "text": "第一章是个毛",
+                  "font": "思源宋体",
+                  "fontSize": 64,
+                  "color": "#FFFFFF",
+                  "fitContent": "height",
+                  "align": "center",
+                  "valign": "middle",
+                  "wordWrap": true,
+                  "padding": "0,0,0,0"
+                }
+              ]
+            },
+            {
+              "_$id": "0el2te6f",
+              "_$type": "Image",
+              "name": "Lock",
+              "x": 370,
+              "width": 240,
+              "height": 240,
+              "visible": false,
+              "skin": "res://54da2a42-b647-40e1-8a52-6c348056e20f",
+              "color": "#ffffff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_$id": "8rrmrpnv",
+      "_$type": "Image",
+      "name": "Close_Seas",
+      "x": 25,
+      "width": 180,
+      "height": 180,
+      "skin": "res://7120a390-8d5c-4181-83e1-b6a788735117",
+      "color": "#ffffff"
+    }
+  ]
+}

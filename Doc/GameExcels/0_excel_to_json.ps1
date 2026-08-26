@@ -1,6 +1,6 @@
 $ErrorActionPreference = 'Stop'
 $dot = [string][char]0x00B7
-$jsonDirectory = 'E:\Yijue\shanhaijing' + $dot + 'shijie\assets\resources\Gameinfo'
+$jsonDirectory = 'E:\Yijue\Shanhaijing_laya\assets\resources\Gameinfo'
 Add-Type -AssemblyName System.Web.Extensions
 $script:JsonSerializer = New-Object System.Web.Script.Serialization.JavaScriptSerializer
 $script:JsonSerializer.MaxJsonLength = [int]::MaxValue

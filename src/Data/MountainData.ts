@@ -1,6 +1,6 @@
 
 
-/** 山经表行数据接口（已剔除 desc 备注字段） */
+/** 山经表行数据接口（已剔除 *_desc 备注字段，保留 Original_info 原著文本） */
 export interface IMountainRow {
     /** 章节编号 */
     id: number;
@@ -12,6 +12,8 @@ export interface IMountainRow {
     img: string;
     /** 现代译文词条标识 */
     definition_info: string;
+    /** 原著文本（表内标记 type=desc，但作为内容字段保留） */
+    Original_info: string;
     [key: string]: any;
 }
 
@@ -48,10 +50,11 @@ export class MountainData {
                 if (!item || typeof item.id !== "number") {
                     continue;
                 }
-                // 剔除纯备注字段（type = "desc"）：name_desc / definition_info_desc / Original_info
+                // 剔除纯备注字段（type = "desc"）：name_desc / definition_info_desc
+                // 注意：Original_info 虽为 desc 类型，但它是"原著文本"内容字段，保留以便界面读取
                 const row: any = {};
                 for (const k in item) {
-                    if (k === "Original_info" || k.endsWith("_desc")) {
+                    if (k.endsWith("_desc")) {
                         continue;
                     }
                     row[k] = item[k];

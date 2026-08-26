@@ -1,74 +1,53 @@
 {
   "_$ver": 1,
-  "_$id": "bkqxgtb7",
+  "_$id": "uh8zawso",
   "_$type": "Box",
-  "name": "Mountains",
+  "name": "Seas",
   "width": 1080,
   "height": 2400,
   "_mouseState": 2,
   "_$comp": [
     {
-      "_$type": "75936446-eccd-4413-857e-4b7f32b2cec3",
-      "scriptPath": "../src/UI/Mountains/Mountains.ts",
+      "_$type": "e7958729-2378-4ee8-8fea-95c2348b927a",
+      "scriptPath": "../src/UI/Seas/Seas.ts",
       "background": {
-        "_$ref": "my2yrnlj"
+        "_$ref": "a9oaqjwm"
       },
-      "Chapter_Image_List": {
-        "_$ref": "l9k272v3"
-      },
-      "Chapter_Image_Box": {
-        "_$ref": "9ppdmz14"
-      },
-      "Chapter_Image": {
-        "_$ref": "fnc6g79t"
-      },
-      "Title_Mountains_Panel": {
-        "_$ref": "h6v43r3o"
-      },
-      "Title_Mountains_Label": {
-        "_$ref": "nwu06xb8"
-      },
-      "infobg": {
-        "_$ref": "uohwvaxp"
+      "Seas_Label": {
+        "_$ref": "hrzjbtxn"
       },
       "Botton_Definition_a": {
-        "_$ref": "5ajko9rk"
-      },
-      "Botton_Definition_m": {
-        "_$ref": "ihi39xmo"
-      },
-      "Botton_Definition_Label": {
-        "_$ref": "vdy3wr1d"
+        "_$ref": "25w7pu1x"
       },
       "Botton_Original_a": {
-        "_$ref": "jcjvchsm"
+        "_$ref": "1vmolitt"
+      },
+      "Botton_Definition_m": {
+        "_$ref": "d5e7jt0g"
       },
       "Botton_Original_m": {
-        "_$ref": "pci6grca"
-      },
-      "Botton_Original_Label": {
-        "_$ref": "mqdvnkwo"
+        "_$ref": "sfz0sj4v"
       },
       "Definition_Panel": {
-        "_$ref": "2xar68lr"
-      },
-      "Definition_Info_Label": {
-        "_$ref": "pl0ssasf"
+        "_$ref": "m7vhpjdt"
       },
       "Original_Panel": {
-        "_$ref": "pzfxp2b6"
+        "_$ref": "cqcmduir"
+      },
+      "Definition_Info_Label": {
+        "_$ref": "xnpjvgux"
       },
       "Original_Info_Label": {
-        "_$ref": "7vo3kimi"
+        "_$ref": "wry2i7x0"
       },
-      "Close_Mountains": {
-        "_$ref": "08bdfvsw"
+      "Close_Seas": {
+        "_$ref": "t06slnry"
       }
     }
   ],
   "_$child": [
     {
-      "_$id": "my2yrnlj",
+      "_$id": "a9oaqjwm",
       "_$type": "Image",
       "name": "background",
       "width": 1080,
@@ -77,7 +56,7 @@
       "color": "#ffffff"
     },
     {
-      "_$id": "l9k272v3",
+      "_$id": "gche4swn",
       "_$type": "List",
       "name": "Chapter_Image_List",
       "y": 200,
@@ -85,7 +64,7 @@
       "height": 1080,
       "_mouseState": 2,
       "itemTemplate": {
-        "_$ref": "9ppdmz14",
+        "_$ref": "do8ndt4n",
         "_$tmpl": "itemRender"
       },
       "repeatX": 1,
@@ -95,14 +74,14 @@
       "scrollType": 1,
       "_$child": [
         {
-          "_$id": "9ppdmz14",
+          "_$id": "do8ndt4n",
           "_$type": "Box",
           "name": "Chapter_Image_Box",
           "width": 1080,
           "height": 1080,
           "_$child": [
             {
-              "_$id": "fnc6g79t",
+              "_$id": "vkl3qwkr",
               "_$type": "Image",
               "name": "Chapter_Image",
               "x": 28,
@@ -116,9 +95,9 @@
       ]
     },
     {
-      "_$id": "h6v43r3o",
+      "_$id": "454iu8if",
       "_$type": "Panel",
-      "name": "Title_Mountains_Panel",
+      "name": "Title_Seas_Panel",
       "y": 100,
       "width": 1080,
       "height": 91,
@@ -126,13 +105,13 @@
       "scrollType": 2,
       "_$child": [
         {
-          "_$id": "nwu06xb8",
+          "_$id": "hrzjbtxn",
           "_$type": "Label",
-          "name": "Title_Mountains_Label",
+          "name": "Title_Seas_Label",
           "y": 13,
           "width": 1080,
           "height": 65,
-          "text": "山经·第一章·青丘之山",
+          "text": "海经·第一章·青丘之山",
           "font": "思源宋体",
           "fontSize": 64,
           "color": "rgba(255, 244, 7, 1)",
@@ -147,7 +126,7 @@
       ]
     },
     {
-      "_$id": "uohwvaxp",
+      "_$id": "fv3vj7ad",
       "_$type": "Image",
       "name": "infobg",
       "y": 1280,
@@ -158,7 +137,7 @@
       "color": "#ffffff",
       "_$child": [
         {
-          "_$id": "5ajko9rk",
+          "_$id": "25w7pu1x",
           "_$type": "Image",
           "name": "Botton_Definition_a",
           "x": 150,
@@ -169,7 +148,7 @@
           "color": "#ffffff",
           "_$child": [
             {
-              "_$id": "ihi39xmo",
+              "_$id": "d5e7jt0g",
               "_$type": "Image",
               "name": "Botton_Definition_m",
               "width": 360,
@@ -178,7 +157,7 @@
               "color": "#ffffff"
             },
             {
-              "_$id": "vdy3wr1d",
+              "_$id": "fpsr7x59",
               "_$type": "Label",
               "name": "Botton_Definition_Label",
               "width": 360,
@@ -196,7 +175,7 @@
           ]
         },
         {
-          "_$id": "jcjvchsm",
+          "_$id": "1vmolitt",
           "_$type": "Image",
           "name": "Botton_Original_a",
           "x": 570,
@@ -207,7 +186,7 @@
           "color": "#ffffff",
           "_$child": [
             {
-              "_$id": "pci6grca",
+              "_$id": "sfz0sj4v",
               "_$type": "Image",
               "name": "Botton_Original_m",
               "width": 360,
@@ -216,7 +195,7 @@
               "color": "#ffffff"
             },
             {
-              "_$id": "mqdvnkwo",
+              "_$id": "3fne5vqm",
               "_$type": "Label",
               "name": "Botton_Original_Label",
               "width": 360,
@@ -234,7 +213,7 @@
           ]
         },
         {
-          "_$id": "2xar68lr",
+          "_$id": "m7vhpjdt",
           "_$type": "Panel",
           "name": "Definition_Panel",
           "x": 89,
@@ -245,7 +224,7 @@
           "scrollType": 2,
           "_$child": [
             {
-              "_$id": "pl0ssasf",
+              "_$id": "xnpjvgux",
               "_$type": "Label",
               "name": "Definition_Info_Label",
               "width": 910,
@@ -263,7 +242,7 @@
           ]
         },
         {
-          "_$id": "pzfxp2b6",
+          "_$id": "cqcmduir",
           "_$type": "Panel",
           "name": "Original_Panel",
           "x": 89,
@@ -274,7 +253,7 @@
           "scrollType": 2,
           "_$child": [
             {
-              "_$id": "7vo3kimi",
+              "_$id": "wry2i7x0",
               "_$type": "Label",
               "name": "Original_Info_Label",
               "width": 910,
@@ -294,9 +273,9 @@
       ]
     },
     {
-      "_$id": "08bdfvsw",
+      "_$id": "t06slnry",
       "_$type": "Image",
-      "name": "Close_Mountains",
+      "name": "Close_Seas",
       "x": 25,
       "width": 180,
       "height": 180,

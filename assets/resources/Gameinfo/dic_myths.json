@@ -1,82 +1,373 @@
 [
-    {
-        "id":  "number",
-        "name":  "string",
-        "name_desc":  "desc",
-        "lock":  "number",
-        "img":  "string",
-        "definition_info":  "string",
-        "definition_info_desc":  "desc",
-        "Original_info":  "desc"
-    },
+    
     {
         "id":  1,
         "name":  "myths_chapter_1",
-        "name_desc":  "章节名字六字",
+        "name_desc":  "女娲造人",
         "lock":  0,
-        "img":  "1101&1102&1103&1104&1105",
+        "img":  "1101",
         "definition_info":  "definition_myths_info_1",
         "definition_info_desc":  "第1章现代译文",
-        "Original_info":  "填第1章原著文本"
+        "Original_info":  "有神十人，名曰女娲之肠，化为神，处栗广之野，横道而处。"
     },
     {
         "id":  2,
         "name":  "myths_chapter_2",
-        "name_desc":  "章节名字六字",
+        "name_desc":  "女娲补天",
         "lock":  0,
-        "img":  "2101&2102&2103&2104&2105",
+        "img":  "2101",
         "definition_info":  "definition_myths_info_2",
         "definition_info_desc":  "第2章现代译文",
-        "Original_info":  "填第2章原著文本"
+        "Original_info":  "（淮南子）往古之时，四极废，九州裂，天不兼覆，地不周载……女娲炼五色石以补苍天，断鳌足以立四极，杀黑龙以济冀州，积芦灰以止淫水。"
     },
     {
         "id":  3,
         "name":  "myths_chapter_3",
-        "name_desc":  "章节名字六字",
+        "name_desc":  "共工触不周山",
         "lock":  0,
-        "img":  "3101&3102&3103&3104&3105",
+        "img":  "3101",
         "definition_info":  "definition_myths_info_3",
         "definition_info_desc":  "第3章现代译文",
-        "Original_info":  "填第3章原著文本"
+        "Original_info":  "西北海之外，大荒之隅，有山而不合，名曰不周……共工之臣曰相柳……（淮南子）共工与颛顼争为帝，怒而触不周之山，天柱折，地维绝。天倾西北，故日月星辰移焉；地不满东南，故水潦尘埃归焉。"
     },
     {
         "id":  4,
         "name":  "myths_chapter_4",
-        "name_desc":  "章节名字六字",
+        "name_desc":  "重黎绝地天通",
         "lock":  0,
-        "img":  "4101&4102&4103&4104&4105",
+        "img":  "4101",
         "definition_info":  "definition_myths_info_4",
         "definition_info_desc":  "第4章现代译文",
-        "Original_info":  "填第4章原著文本"
+        "Original_info":  "颛顼生老童，老童生重及黎，帝令重献上天，令黎卬下地，下地是生噎，处于西极，以行日月星辰之行次。"
     },
     {
         "id":  5,
         "name":  "myths_chapter_5",
-        "name_desc":  "章节名字六字",
+        "name_desc":  "烛龙司昼夜四时",
         "lock":  0,
-        "img":  "5101&5102&5103&5104&5105",
+        "img":  "5101",
         "definition_info":  "definition_myths_info_5",
         "definition_info_desc":  "第5章现代译文",
-        "Original_info":  "填第5章原著文本"
+        "Original_info":  "钟山之神，名曰烛阴，视为昼，瞑为夜，吹为冬，呼为夏，不饮，不食，不息，息为风。身长千里。"
     },
     {
         "id":  6,
         "name":  "myths_chapter_6",
-        "name_desc":  "章节名字六字",
-        "lock":  1,
-        "img":  "6101&6102&6103&6104&6105",
+        "name_desc":  "羲和浴日（生十日）",
+        "lock":  0,
+        "img":  "6101",
         "definition_info":  "definition_myths_info_6",
         "definition_info_desc":  "第6章现代译文",
-        "Original_info":  "填第6章原著文本"
+        "Original_info":  "有女子名曰羲和，方浴日于甘渊。羲和者，帝俊之妻，生十日。"
     },
     {
         "id":  7,
         "name":  "myths_chapter_7",
-        "name_desc":  "章节名字六字",
-        "lock":  1,
-        "img":  "7101&7102&7103&7104&7105",
+        "name_desc":  "常羲浴月（生十二月）",
+        "lock":  0,
+        "img":  "7101",
         "definition_info":  "definition_myths_info_7",
         "definition_info_desc":  "第7章现代译文",
-        "Original_info":  "填第7章原著文本"
+        "Original_info":  "有女子方浴月。帝俊妻常羲，生月十有二，此始浴之。"
+    },
+    {
+        "id":  8,
+        "name":  "myths_chapter_8",
+        "name_desc":  "十日并出与后羿射日",
+        "lock":  0,
+        "img":  "8101",
+        "definition_info":  "definition_myths_info_8",
+        "definition_info_desc":  "第8章现代译文",
+        "Original_info":  "（淮南子）逮至尧之时，十日并出，焦禾稼，杀草木，而民无所食……尧乃使羿……上射十日。"
+    },
+    {
+        "id":  9,
+        "name":  "myths_chapter_9",
+        "name_desc":  "夸父逐日",
+        "lock":  0,
+        "img":  "9101",
+        "definition_info":  "definition_myths_info_9",
+        "definition_info_desc":  "第9章现代译文",
+        "Original_info":  "夸父与日逐走，入日。渴，欲得饮，饮于河渭；河渭不足，北饮大泽。未至，道渴而死。弃其杖，化为邓林。"
+    },
+    {
+        "id":  10,
+        "name":  "myths_chapter_10",
+        "name_desc":  "精卫填海",
+        "lock":  0,
+        "img":  "10101",
+        "definition_info":  "definition_myths_info_10",
+        "definition_info_desc":  "第10章现代译文",
+        "Original_info":  "有鸟焉，其状如乌，文首、白喙、赤足，名曰精卫，其鸣自詨。是炎帝之少女，名曰女娃。女娃游于东海，溺而不返，故为精卫，常衔西山之木石，以堙于东海。"
+    },
+    {
+        "id":  11,
+        "name":  "myths_chapter_11",
+        "name_desc":  "鲧禹治水（息壤与父继子承）",
+        "lock":  0,
+        "img":  "11101&11102",
+        "definition_info":  "definition_myths_info_11",
+        "definition_info_desc":  "第11章现代译文",
+        "Original_info":  "洪水滔天。鲧窃帝之息壤以堙洪水，不待帝命。帝令祝融杀鲧于羽郊。鲧复生禹。帝乃命禹卒布土以定九州。"
+    },
+    {
+        "id":  12,
+        "name":  "myths_chapter_12",
+        "name_desc":  "应龙助禹杀蚩尤夸父",
+        "lock":  0,
+        "img":  "12101",
+        "definition_info":  "definition_myths_info_12",
+        "definition_info_desc":  "第12章现代译文",
+        "Original_info":  "应龙处南极，杀蚩尤与夸父，不得复上，故下数旱。旱而为应龙之状，乃得大雨。"
+    },
+    {
+        "id":  13,
+        "name":  "myths_chapter_13",
+        "name_desc":  "黄帝战蚩尤",
+        "lock":  0,
+        "img":  "13101",
+        "definition_info":  "definition_myths_info_13",
+        "definition_info_desc":  "第13章现代译文",
+        "Original_info":  "（应龙）杀蚩尤与夸父……（山海经逸文）黄帝乃令应龙攻之冀州之野，蚩尤请风伯雨师，纵大风雨。黄帝乃下天女曰魃，雨止，遂杀蚩尤。"
+    },
+    {
+        "id":  14,
+        "name":  "myths_chapter_14",
+        "name_desc":  "刑天舞干戚",
+        "lock":  0,
+        "img":  "14101",
+        "definition_info":  "definition_myths_info_14",
+        "definition_info_desc":  "第14章现代译文",
+        "Original_info":  "刑天与帝至此争神，帝断其首，葬之常羊之山。乃以乳为目，以脐为口，操干戚以舞。"
+    },
+    {
+        "id":  15,
+        "name":  "myths_chapter_15",
+        "name_desc":  "蚩尤（兵主）",
+        "lock":  0,
+        "img":  "15101",
+        "definition_info":  "definition_myths_info_15",
+        "definition_info_desc":  "第15章现代译文",
+        "Original_info":  "（宋山）枫木，蚩尤所弃其桎梏，是为枫木……（逸文）蚩尤作兵伐黄帝，黄帝乃令应龙攻之。"
+    },
+    {
+        "id":  16,
+        "name":  "myths_chapter_16",
+        "name_desc":  "旱魃（女魃）",
+        "lock":  0,
+        "img":  "16101",
+        "definition_info":  "definition_myths_info_16",
+        "definition_info_desc":  "第16章现代译文",
+        "Original_info":  "（逸文）有人衣青衣，名曰黄帝女魃。蚩尤作兵伐黄帝……黄帝乃下天女曰魃，雨止，遂杀蚩尤。魃不得复上，所居不雨。"
+    },
+    {
+        "id":  17,
+        "name":  "myths_chapter_17",
+        "name_desc":  "西王母（司天之厉）",
+        "lock":  0,
+        "img":  "17101",
+        "definition_info":  "definition_myths_info_17",
+        "definition_info_desc":  "第17章现代译文",
+        "Original_info":  "（西山经）西王母其状如人，豹尾虎齿而善啸，蓬发戴胜，是司天之厉及五残。（海外西）西王母居玉山，是司天之厉及五残。"
+    },
+    {
+        "id":  18,
+        "name":  "myths_chapter_18",
+        "name_desc":  "四方神（句芒·祝融·蓐收·禺彊）",
+        "lock":  0,
+        "img":  "18101&18102&18103&18104",
+        "definition_info":  "definition_myths_info_18",
+        "definition_info_desc":  "第18章现代译文",
+        "Original_info":  "东方句芒，鸟身人面，乘两龙。南方祝融，兽身人面，乘两龙。西方蓐收，左耳有蛇，乘两龙。北方禺彊，人面鸟身，珥两青蛇，践两青蛇。"
+    },
+    {
+        "id":  19,
+        "name":  "myths_chapter_19",
+        "name_desc":  "帝俊（上古天帝）",
+        "lock":  0,
+        "img":  "19101",
+        "definition_info":  "definition_myths_info_19",
+        "definition_info_desc":  "第19章现代译文",
+        "Original_info":  "帝俊生中容……帝俊妻羲和，生十日……帝俊妻常羲，生月十有二……帝俊生后稷，稷降以百谷……帝俊竹林……"
+    },
+    {
+        "id":  20,
+        "name":  "myths_chapter_20",
+        "name_desc":  "少昊（东方之帝）",
+        "lock":  0,
+        "img":  "20101",
+        "definition_info":  "definition_myths_info_20",
+        "definition_info_desc":  "第20章现代译文",
+        "Original_info":  "东海之外大壑，少昊之国。少昊孺帝颛顼于此，弃其琴瑟。"
+    },
+    {
+        "id":  21,
+        "name":  "myths_chapter_21",
+        "name_desc":  "颛顼（北方之帝）",
+        "lock":  0,
+        "img":  "21101",
+        "definition_info":  "definition_myths_info_21",
+        "definition_info_desc":  "第21章现代译文",
+        "Original_info":  "颛顼生老童，老童生重及黎……帝颛顼与九嫔葬焉（附禺之山）……颛顼生驩头，驩头生苗民。"
+    },
+    {
+        "id":  22,
+        "name":  "myths_chapter_22",
+        "name_desc":  "炎帝神农",
+        "lock":  0,
+        "img":  "22101",
+        "definition_info":  "definition_myths_info_22",
+        "definition_info_desc":  "第22章现代译文",
+        "Original_info":  "（北山经）是炎帝之少女，名曰女娃……（传世）炎帝神农氏，人身牛首，尝百草，教耕稼。"
+    },
+    {
+        "id":  23,
+        "name":  "myths_chapter_23",
+        "name_desc":  "伏羲（雷泽生）",
+        "lock":  0,
+        "img":  "23101",
+        "definition_info":  "definition_myths_info_23",
+        "definition_info_desc":  "第23章现代译文",
+        "Original_info":  "雷泽中有雷神，龙身而人头，鼓其腹。在吴西。（传世）华胥履雷泽大迹，而生伏羲。"
+    },
+    {
+        "id":  24,
+        "name":  "myths_chapter_24",
+        "name_desc":  "后稷（农神）",
+        "lock":  0,
+        "img":  "24101",
+        "definition_info":  "definition_myths_info_24",
+        "definition_info_desc":  "第24章现代译文",
+        "Original_info":  "帝俊生后稷，稷降以百谷……后稷是播百谷。后稷之葬，山水环之，爰有膏菽膏稻……百谷自生。"
+    },
+    {
+        "id":  25,
+        "name":  "myths_chapter_25",
+        "name_desc":  "太子长琴（乐祖）",
+        "lock":  0,
+        "img":  "25101",
+        "definition_info":  "definition_myths_info_25",
+        "definition_info_desc":  "第25章现代译文",
+        "Original_info":  "颛顼生老童，老童生祝融，祝融生太子长琴，是处榣山，始作乐风。"
+    },
+    {
+        "id":  26,
+        "name":  "myths_chapter_26",
+        "name_desc":  "相柳（九首蛇身）",
+        "lock":  0,
+        "img":  "26101",
+        "definition_info":  "definition_myths_info_26",
+        "definition_info_desc":  "第26章现代译文",
+        "Original_info":  "共工之臣曰相柳氏，九首，蛇身而青。不敢北射，畏共工之台。"
+    },
+    {
+        "id":  27,
+        "name":  "myths_chapter_27",
+        "name_desc":  "贰负杀窫窳",
+        "lock":  0,
+        "img":  "27101",
+        "definition_info":  "definition_myths_info_27",
+        "definition_info_desc":  "第27章现代译文",
+        "Original_info":  "贰负之臣曰危，危与贰负杀窫窳。帝乃梏之疏属之山，桎其右足，反缚两手与发，系之山上木。"
+    },
+    {
+        "id":  28,
+        "name":  "myths_chapter_28",
+        "name_desc":  "穷奇（是非颠倒）",
+        "lock":  0,
+        "img":  "28101",
+        "definition_info":  "definition_myths_info_28",
+        "definition_info_desc":  "第28章现代译文",
+        "Original_info":  "穷奇状如虎，有翼，食人从首始……为物，状如牛，猬毛，名曰穷奇，音如獆狗。"
+    },
+    {
+        "id":  29,
+        "name":  "myths_chapter_29",
+        "name_desc":  "饕餮（狍鸮）",
+        "lock":  0,
+        "img":  "29101",
+        "definition_info":  "definition_myths_info_29",
+        "definition_info_desc":  "第29章现代译文",
+        "Original_info":  "（北山经）有兽焉，其状如羊身人面，其目在腋下，虎齿人爪，其音如婴儿，食人。（吕氏）周鼎著饕餮，有首无身，食人未咽。"
+    },
+    {
+        "id":  30,
+        "name":  "myths_chapter_30",
+        "name_desc":  "九凤与强良",
+        "lock":  0,
+        "img":  "30101&30102",
+        "definition_info":  "definition_myths_info_30",
+        "definition_info_desc":  "第30章现代译文",
+        "Original_info":  "有神，九首人面鸟身，名曰九凤。又有神，衔蛇操蛇，其状虎首人身，四蹄长肘，名曰强良。"
+    },
+    {
+        "id":  31,
+        "name":  "myths_chapter_31",
+        "name_desc":  "巴蛇吞象",
+        "lock":  0,
+        "img":  "31101",
+        "definition_info":  "definition_myths_info_31",
+        "definition_info_desc":  "第31章现代译文",
+        "Original_info":  "有黑蛇，青首，食象。巴蛇食象，三岁而出其骨，君子服之，无心腹之疾。"
+    },
+    {
+        "id":  32,
+        "name":  "myths_chapter_32",
+        "name_desc":  "嫦娥奔月",
+        "lock":  0,
+        "img":  "32101",
+        "definition_info":  "definition_myths_info_32",
+        "definition_info_desc":  "第32章现代译文",
+        "Original_info":  "（淮南子）羿请不死之药于西王母，姮娥（嫦娥）窃以奔月。"
+    },
+    {
+        "id":  33,
+        "name":  "myths_chapter_33",
+        "name_desc":  "不死之国与蓬莱仙山",
+        "lock":  0,
+        "img":  "33101",
+        "definition_info":  "definition_myths_info_33",
+        "definition_info_desc":  "第33章现代译文",
+        "Original_info":  "不死民在其东，其为人黑色，寿，不死。蓬莱山在海中。"
+    },
+    {
+        "id":  34,
+        "name":  "myths_chapter_34",
+        "name_desc":  "羽民与不死民（异形之民）",
+        "lock":  0,
+        "img":  "34101",
+        "definition_info":  "definition_myths_info_34",
+        "definition_info_desc":  "第34章现代译文",
+        "Original_info":  "羽民国在其东南，其为人长头，身生羽。不死民在其东，其为人黑色，寿，不死。"
+    },
+    {
+        "id":  35,
+        "name":  "myths_chapter_35",
+        "name_desc":  "欧丝之野（蚕女）",
+        "lock":  0,
+        "img":  "35101",
+        "definition_info":  "definition_myths_info_35",
+        "definition_info_desc":  "第35章现代译文",
+        "Original_info":  "欧丝之野在反踵东，一女子跪据树欧丝。"
+    },
+    {
+        "id":  36,
+        "name":  "myths_chapter_36",
+        "name_desc":  "雷神（雷泽）",
+        "lock":  0,
+        "img":  "36101",
+        "definition_info":  "definition_myths_info_36",
+        "definition_info_desc":  "第36章现代译文",
+        "Original_info":  "雷泽中有雷神，龙身而人头，鼓其腹。在吴西。"
+    },
+    {
+        "id":  37,
+        "name":  "myths_chapter_37",
+        "name_desc":  "建木（天梯）",
+        "lock":  0,
+        "img":  "37101",
+        "definition_info":  "definition_myths_info_37",
+        "definition_info_desc":  "第37章现代译文",
+        "Original_info":  "有木……名曰建木。众帝所自上下。"
     }
 ]

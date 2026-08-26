@@ -3,7 +3,7 @@ const { regClass, property } = Laya;
 import { I18N } from "../../Data/I18N";
 import { ChapterManager } from "../../Data/ChapterManager";
 import type { LangKey } from "../../Data/LanguageData";
-import { Mountains } from "./Mountains";
+import { Seas } from "./Seas";
 
 /**
  * 章节编号前后缀的多语言文本（本地常量，不写入 dic_language.json）
@@ -29,14 +29,14 @@ const CHAPTER_SUFFIX: Record<LangKey, string> = {
 };
 
 /**
- * 山经选择界面（Mountains_choose）：
- * - 列表解析 dic_mountains 表的 id 列，按 id 渲染：
+ * 海经选择界面（Seas_choose）：
+ * - 列表解析 dic_seas 表的 id 列，按 id 渲染：
  *     Chapter_number = 多语言"第" + id + 多语言"章"（如 第1章）；
- *     Chpter_name   = name 字段值对应的多语言文本（如 mountains_chapter_1）；
- * - 点击 Close_Mountains 关闭该界面。
+ *     Chpter_name   = name 字段值对应的多语言文本（如 seas_chapter_1）；
+ * - 点击 Close_Seas 关闭该界面。
  */
 @regClass()
-export class Mountains_choose extends Laya.Script {
+export class Seas_choose extends Laya.Script {
     // ==================== 组件变量声明 ====================
 
     /** 背景 */
@@ -45,17 +45,18 @@ export class Mountains_choose extends Laya.Script {
 
     /** 标题面板（含标题文本） */
     @property({ type: Laya.Panel })
-    public Title_Mountainschoose_Panel: Laya.Panel = null;
+    public Title_Seaschoose_Panel: Laya.Panel = null;
     /** 标题文本 */
     @property({ type: Laya.Label })
-    public Title_Mountainschoose_Label: Laya.Label = null;
+    public Title_Seaschoose_Label: Laya.Label = null;
 
     /** 列表 */
     @property({ type: Laya.List })
-    public Mountains_List: Laya.List = null;
+    public Seas_List: Laya.List = null;
 
     /** 列表项模板：ItemBox */
-    @property({ type: Laya.Box })
+   
+   @property({ type: Laya.Box })
     public ItemBox: Laya.Box = null;
     /** 列表项背景 */
     @property({ type: Laya.Image })
@@ -78,10 +79,10 @@ export class Mountains_choose extends Laya.Script {
 
     /** 关闭按钮 */
     @property({ type: Laya.Image })
-    public Close_Mountains: Laya.Image = null;
+    public Close_Seas: Laya.Image = null;
 
-    /** 山经阅读界面（Mountains 预制体，动态加载；关闭时仅隐藏） */
-    private _mountainsPanel: Laya.Sprite = null;
+    /** 海经阅读界面（Seas 预制体，动态加载；关闭时仅隐藏） */
+    private _seasPanel: Laya.Sprite = null;
 
     // ==================== 生命周期 ====================
 
@@ -90,16 +91,16 @@ export class Mountains_choose extends Laya.Script {
     }
 
     onStart(): void {
-        if (this.Close_Mountains) {
-            this.Close_Mountains.on(Laya.Event.CLICK, this, this._onCloseClick);
+        if (this.Close_Seas) {
+            this.Close_Seas.on(Laya.Event.CLICK, this, this._onCloseClick);
         }
-        // 列表 cell 点击：打开对应的 Mountains 界面
-        if (this.Mountains_List) {
+        // 列表 cell 点击：打开对应的 Seas 界面
+        if (this.Seas_List) {
             // 必须开启 selectEnable，否则点击 cell 不会触发 selectHandler
-            this.Mountains_List.selectEnable = true;
-            this.Mountains_List.selectHandler = new Laya.Handler(this, this._onListSelect);
+            this.Seas_List.selectEnable = true;
+            this.Seas_List.selectHandler = new Laya.Handler(this, this._onListSelect);
         }
-        // 列表数据源：确保章节表已加载后，解析 dic_mountains 的 id 列并渲染
+        // 列表数据源：确保章节表已加载后，解析 dic_seas 的 id 列并渲染
         this._initList();
     }
 
@@ -111,20 +112,20 @@ export class Mountains_choose extends Laya.Script {
         this.list_setup();
     }
 
-    /** 列表初始化（默认可不传，自动从 dic_mountains 表解析 id 列） */
+    /** 列表初始化（默认可不传，自动从 dic_seas 表解析 id 列） */
     list_setup(Items: any[] = null): void {
-        if (!this.Mountains_List) {
-            console.error("Mountains_choose: Mountains_List 未绑定");
+        if (!this.Seas_List) {
+            console.error("Seas_choose: Seas_List 未绑定");
             return;
         }
 
-        // 解析 dic_mountains 表的 id 列：每个元素仅持有 id，便于渲染时取多语言文本
-        const data = ChapterManager.inst.mountains.getAll();
+        // 解析 dic_seas 表的 id 列：每个元素仅持有 id，便于渲染时取多语言文本
+        const data = ChapterManager.inst.seas.getAll();
         const listData = data.map((row) => ({ id: row.id }));
 
-        this.Mountains_List.renderHandler = new Laya.Handler(this, this.onRenderListItem);
-        this.Mountains_List.array = Items !== null ? Items : listData;
-        this.Mountains_List.refresh();
+        this.Seas_List.renderHandler = new Laya.Handler(this, this.onRenderListItem);
+        this.Seas_List.array = Items !== null ? Items : listData;
+        this.Seas_List.refresh();
     }
 
     /** 列表项渲染回调 */
@@ -139,7 +140,7 @@ export class Mountains_choose extends Laya.Script {
         const data = box.dataSource as { id?: number };
         const id = Number(data && data.id);
         if (!Number.isFinite(id)) {
-            console.warn("[Mountains_choose] 列表项缺少有效 id:", data, index);
+            console.warn("[Seas_choose] 列表项缺少有效 id:", data, index);
             return;
         }
         if (chapterNumber) {
@@ -149,18 +150,18 @@ export class Mountains_choose extends Laya.Script {
             chapterNumber.text = `${prefix}${id}${suffix}`;
         }
         if (chapterName) {
-            // Chpter_name = name 字段值对应的多语言文本（如 mountains_chapter_1）
-            const row = ChapterManager.inst.mountains.getRow(id);
+            // Chpter_name = name 字段值对应的多语言文本（如 seas_chapter_1）
+            const row = ChapterManager.inst.seas.getRow(id);
             chapterName.text = row ? I18N.inst.t(row.name) : "";
         }
     }
 
     onDestroy(): void {
-        if (this.Close_Mountains) {
-            this.Close_Mountains.off(Laya.Event.CLICK, this, this._onCloseClick);
+        if (this.Close_Seas) {
+            this.Close_Seas.off(Laya.Event.CLICK, this, this._onCloseClick);
         }
-        if (this.Mountains_List) {
-            this.Mountains_List.selectHandler = null;
+        if (this.Seas_List) {
+            this.Seas_List.selectHandler = null;
         }
     }
 
@@ -170,18 +171,18 @@ export class Mountains_choose extends Laya.Script {
         if (!this.background) {
             this.background = this.owner.getChildByName("background") as Laya.Image;
         }
-        if (!this.Title_Mountainschoose_Panel) {
-            this.Title_Mountainschoose_Panel = this.owner.getChildByName("Title_Mountainschoose_Panel") as Laya.Panel;
+        if (!this.Title_Seaschoose_Panel) {
+            this.Title_Seaschoose_Panel = this.owner.getChildByName("Title_Seaschoose_Panel") as Laya.Panel;
         }
-        if (this.Title_Mountainschoose_Panel && !this.Title_Mountainschoose_Label) {
-            this.Title_Mountainschoose_Label = this.Title_Mountainschoose_Panel.getChildByName("Title_Mountainschoose_Label") as Laya.Label;
+        if (this.Title_Seaschoose_Panel && !this.Title_Seaschoose_Label) {
+            this.Title_Seaschoose_Label = this.Title_Seaschoose_Panel.getChildByName("Title_Seaschoose_Label") as Laya.Label;
         }
-        if (!this.Mountains_List) {
-            this.Mountains_List = this.owner.getChildByName("Mountains_List") as Laya.List;
+        if (!this.Seas_List) {
+            this.Seas_List = this.owner.getChildByName("Seas_List") as Laya.List;
         }
         // 列表项模板节点（仅用于声明挂载，交互暂不开发）
-        if (this.Mountains_List) {
-            const item = this.Mountains_List.getChildByName("ItemBox") as Laya.Box;
+        if (this.Seas_List) {
+            const item = this.Seas_List.getChildByName("ItemBox") as Laya.Box;
             if (item) {
                 if (!this.ItemBox) this.ItemBox = item;
                 if (!this.Itembg) this.Itembg = item.getChildByName("Itembg") as Laya.Image;
@@ -194,51 +195,51 @@ export class Mountains_choose extends Laya.Script {
                 if (!this.Lock) this.Lock = item.getChildByName("Lock") as Laya.Image;
             }
         }
-        if (!this.Close_Mountains) {
-            this.Close_Mountains = this.owner.getChildByName("Close_Mountains") as Laya.Image;
+        if (!this.Close_Seas) {
+            this.Close_Seas = this.owner.getChildByName("Close_Seas") as Laya.Image;
         }
     }
 
     // ==================== 列表 cell 点击 ====================
 
-    /** 点击列表项（cell）：打开对应的 Mountains 阅读界面 */
+    /** 点击列表项（cell）：打开对应的 Seas 阅读界面 */
     private _onListSelect(index: number): void {
         if (index < 0) {
             return;
         }
         // 由列表数据源取出的 id（data 为 {id}）
-        const data = this.Mountains_List.getItem(index);
+        const data = this.Seas_List.getItem(index);
         const id = data ? (data as any).id : 1;
-        this._openMountains(id);
-        //  iven选中，保证关闭 Mountains 后再次点击同一 cell 仍能触发
-        if (this.Mountains_List) {
-            this.Mountains_List.selectedIndex = -1;
+        this._openSeas(id);
+        // 取消选中，保证关闭 Seas 后再次点击同一 cell 仍能触发
+        if (this.Seas_List) {
+            this.Seas_List.selectedIndex = -1;
         }
     }
 
-    /** 打开 Mountains 界面：已加载则直接显示并切换章节，否则动态加载 prefab 并加入场景 */
-    private _openMountains(chapterId: number): void {
-        if (this._mountainsPanel) {
-            this._mountainsPanel.visible = true;
-            const script = this._mountainsPanel.getComponent(Mountains) as Mountains;
+    /** 打开 Seas 界面：已加载则直接显示并切换章节，否则动态加载 prefab 并加入场景 */
+    private _openSeas(chapterId: number): void {
+        if (this._seasPanel) {
+            this._seasPanel.visible = true;
+            const script = this._seasPanel.getComponent(Seas) as Seas;
             if (script) {
                 script.show(chapterId);
             }
             return;
         }
-        const url: string = "prefabs/Mountains.lh";
+        const url: string = "prefabs/Seas.lh";
         Laya.loader.load(url, Laya.Handler.create(this, (res: any) => {
             if (!res) {
-                console.warn("[Mountains_choose] 加载 Mountains 失败:", url);
+                console.warn("[Seas_choose] 加载 Seas 失败:", url);
                 return;
             }
             const node: Laya.Sprite = res.create();
             if (node) {
-                this._mountainsPanel = node;
-                // 加入当前场景（与 Mountains_choose 同一层级，确保显示在最上层）
+                this._seasPanel = node;
+                // 加入当前场景（与 Seas_choose 同一层级，确保显示在最上层）
                 this.owner.parent && this.owner.parent.addChild(node);
                 node.visible = true;
-                const script = node.getComponent(Mountains) as Mountains;
+                const script = node.getComponent(Seas) as Seas;
                 if (script) {
                     script.show(chapterId);
                 }

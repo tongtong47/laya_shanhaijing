@@ -1,82 +1,1112 @@
 [
     {
-        "id":  "number",
-        "name":  "string",
-        "name_desc":  "desc",
-        "lock":  "number",
-        "img":  "string",
-        "definition_info":  "string",
-        "definition_info_desc":  "desc",
-        "Original_info":  "desc"
-    },
-    {
         "id":  1,
         "name":  "seas_chapter_1",
-        "name_desc":  "章节名字六字",
+        "name_desc":  "结匈国",
         "lock":  0,
-        "img":  "1101&1102&1103&1104&1105",
+        "img":  "1101",
         "definition_info":  "definition_seas_info_1",
         "definition_info_desc":  "第1章现代译文",
-        "Original_info":  "填第1章原著文本"
+        "Original_info":  "结匈国在其西南，其为人结匈。"
     },
     {
         "id":  2,
         "name":  "seas_chapter_2",
-        "name_desc":  "章节名字六字",
+        "name_desc":  "羽民国",
         "lock":  0,
-        "img":  "2101&2102&2103&2104&2105",
+        "img":  "2101",
         "definition_info":  "definition_seas_info_2",
         "definition_info_desc":  "第2章现代译文",
-        "Original_info":  "填第2章原著文本"
+        "Original_info":  "羽民国在其东南，其为人长头，身生羽。一曰在比翼鸟东南，其为人长颊。"
     },
     {
         "id":  3,
         "name":  "seas_chapter_3",
-        "name_desc":  "章节名字六字",
+        "name_desc":  "讙头国（讙朱国）",
         "lock":  0,
-        "img":  "3101&3102&3103&3104&3105",
+        "img":  "3101",
         "definition_info":  "definition_seas_info_3",
         "definition_info_desc":  "第3章现代译文",
-        "Original_info":  "填第3章原著文本"
+        "Original_info":  "讙头国在其南，其为人人面有翼，鸟喙，方捕鱼。一曰在毕方东。或曰讙朱国。"
     },
     {
         "id":  4,
         "name":  "seas_chapter_4",
-        "name_desc":  "章节名字六字",
+        "name_desc":  "厌火国",
         "lock":  0,
-        "img":  "4101&4102&4103&4104&4105",
+        "img":  "4101",
         "definition_info":  "definition_seas_info_4",
         "definition_info_desc":  "第4章现代译文",
-        "Original_info":  "填第4章原著文本"
+        "Original_info":  "厌火国在其国南，兽身黑色，生火出其口中。一曰在讙朱东。"
     },
     {
         "id":  5,
         "name":  "seas_chapter_5",
-        "name_desc":  "章节名字六字",
+        "name_desc":  "三苗国",
         "lock":  0,
-        "img":  "5101&5102&5103&5104&5105",
+        "img":  "5101",
         "definition_info":  "definition_seas_info_5",
         "definition_info_desc":  "第5章现代译文",
-        "Original_info":  "填第5章原著文本"
+        "Original_info":  "三苗国在赤水东，其为人相随。一曰三毛国。"
     },
     {
         "id":  6,
         "name":  "seas_chapter_6",
-        "name_desc":  "章节名字六字",
-        "lock":  1,
-        "img":  "6101&6102&6103&6104&6105",
+        "name_desc":  "臷国（盛国）",
+        "lock":  0,
+        "img":  "6101",
         "definition_info":  "definition_seas_info_6",
         "definition_info_desc":  "第6章现代译文",
-        "Original_info":  "填第6章原著文本"
+        "Original_info":  "臷国在其东，其为人黄，能操弓射蛇。一曰盛国。"
     },
     {
         "id":  7,
         "name":  "seas_chapter_7",
-        "name_desc":  "章节名字六字",
-        "lock":  1,
-        "img":  "7101&7102&7103&7104&7105",
+        "name_desc":  "贯匈国（穿胸国）",
+        "lock":  0,
+        "img":  "7101",
         "definition_info":  "definition_seas_info_7",
         "definition_info_desc":  "第7章现代译文",
-        "Original_info":  "填第7章原著文本"
+        "Original_info":  "贯匈国在其东，其为人匈有窍。一曰在臷国东。"
+    },
+    {
+        "id":  8,
+        "name":  "seas_chapter_8",
+        "name_desc":  "交胫国",
+        "lock":  0,
+        "img":  "8101",
+        "definition_info":  "definition_seas_info_8",
+        "definition_info_desc":  "第8章现代译文",
+        "Original_info":  "交胫国在其东，其为人交胫。一曰在穿匈东。"
+    },
+    {
+        "id":  9,
+        "name":  "seas_chapter_9",
+        "name_desc":  "不死民",
+        "lock":  0,
+        "img":  "9101",
+        "definition_info":  "definition_seas_info_9",
+        "definition_info_desc":  "第9章现代译文",
+        "Original_info":  "不死民在其东，其为人黑色，寿，不死。一曰在穿匈国东。"
+    },
+    {
+        "id":  10,
+        "name":  "seas_chapter_10",
+        "name_desc":  "岐舌国（反舌国）",
+        "lock":  0,
+        "img":  "10101",
+        "definition_info":  "definition_seas_info_10",
+        "definition_info_desc":  "第10章现代译文",
+        "Original_info":  "岐舌国在其东，其为人反舌。一曰支舌国，在不死民东。"
+    },
+    {
+        "id":  11,
+        "name":  "seas_chapter_11",
+        "name_desc":  "三首国",
+        "lock":  0,
+        "img":  "11101",
+        "definition_info":  "definition_seas_info_11",
+        "definition_info_desc":  "第11章现代译文",
+        "Original_info":  "三首国在其东，其为人一身三首。一曰在凿齿东。"
+    },
+    {
+        "id":  12,
+        "name":  "seas_chapter_12",
+        "name_desc":  "周饶国（侏儒国）",
+        "lock":  0,
+        "img":  "12101",
+        "definition_info":  "definition_seas_info_12",
+        "definition_info_desc":  "第12章现代译文",
+        "Original_info":  "周饶国在其东，其为人短小，冠带。一曰焦侥国，在三首东。"
+    },
+    {
+        "id":  13,
+        "name":  "seas_chapter_13",
+        "name_desc":  "长臂国",
+        "lock":  0,
+        "img":  "13101",
+        "definition_info":  "definition_seas_info_13",
+        "definition_info_desc":  "第13章现代译文",
+        "Original_info":  "长臂国在其东，捕鱼水中，两手各操一鱼。一曰在焦侥东，捕鱼海中。"
+    },
+    {
+        "id":  14,
+        "name":  "seas_chapter_14",
+        "name_desc":  "南方祝融",
+        "lock":  0,
+        "img":  "14101",
+        "definition_info":  "definition_seas_info_14",
+        "definition_info_desc":  "第14章现代译文",
+        "Original_info":  "南方祝融，兽身人面，乘两龙。"
+    },
+    {
+        "id":  15,
+        "name":  "seas_chapter_15",
+        "name_desc":  "灭蒙鸟",
+        "lock":  0,
+        "img":  "15101",
+        "definition_info":  "definition_seas_info_15",
+        "definition_info_desc":  "第15章现代译文",
+        "Original_info":  "灭蒙鸟在结匈国北，为鸟青，赤尾。"
+    },
+    {
+        "id":  16,
+        "name":  "seas_chapter_16",
+        "name_desc":  "夏后启（大乐之野）",
+        "lock":  0,
+        "img":  "16101",
+        "definition_info":  "definition_seas_info_16",
+        "definition_info_desc":  "第16章现代译文",
+        "Original_info":  "大乐之野，夏后启于此儛九代，乘两龙，云盖三层。左手操翳，右手操环，佩玉璜。在大运山北。一曰大遗之野。"
+    },
+    {
+        "id":  17,
+        "name":  "seas_chapter_17",
+        "name_desc":  "三身国",
+        "lock":  0,
+        "img":  "17101",
+        "definition_info":  "definition_seas_info_17",
+        "definition_info_desc":  "第17章现代译文",
+        "Original_info":  "三身国在夏后启北，一首而三身。"
+    },
+    {
+        "id":  18,
+        "name":  "seas_chapter_18",
+        "name_desc":  "一臂国（一臂一目）",
+        "lock":  0,
+        "img":  "18101",
+        "definition_info":  "definition_seas_info_18",
+        "definition_info_desc":  "第18章现代译文",
+        "Original_info":  "一臂国在其北，一臂、一目、一鼻孔。有黄马虎文，一目而一手。"
+    },
+    {
+        "id":  19,
+        "name":  "seas_chapter_19",
+        "name_desc":  "奇肱之国",
+        "lock":  0,
+        "img":  "19101",
+        "definition_info":  "definition_seas_info_19",
+        "definition_info_desc":  "第19章现代译文",
+        "Original_info":  "奇肱之国在其北，其人一臂三目，有阴有阳，乘文马。有鸟焉，两头，赤黄色，在其旁。"
+    },
+    {
+        "id":  20,
+        "name":  "seas_chapter_20",
+        "name_desc":  "形天（刑天）",
+        "lock":  0,
+        "img":  "20101",
+        "definition_info":  "definition_seas_info_20",
+        "definition_info_desc":  "第20章现代译文",
+        "Original_info":  "刑天与帝至此争神，帝断其首，葬之常羊之山。乃以乳为目，以脐为口，操干戚以舞。"
+    },
+    {
+        "id":  21,
+        "name":  "seas_chapter_21",
+        "name_desc":  "女祭女戚",
+        "lock":  0,
+        "img":  "21101",
+        "definition_info":  "definition_seas_info_21",
+        "definition_info_desc":  "第21章现代译文",
+        "Original_info":  "女祭、女戚在其北，居两水间，戚操鱼䱇，祭操俎。"
+    },
+    {
+        "id":  22,
+        "name":  "seas_chapter_22",
+        "name_desc":  "丈夫国",
+        "lock":  0,
+        "img":  "22101",
+        "definition_info":  "definition_seas_info_22",
+        "definition_info_desc":  "第22章现代译文",
+        "Original_info":  "丈夫国在维鸟北，其为人衣冠带剑。"
+    },
+    {
+        "id":  23,
+        "name":  "seas_chapter_23",
+        "name_desc":  "巫咸国",
+        "lock":  0,
+        "img":  "23101",
+        "definition_info":  "definition_seas_info_23",
+        "definition_info_desc":  "第23章现代译文",
+        "Original_info":  "巫咸国在女丑北，右手操青蛇，左手操赤蛇，在登葆山，群巫所从上下也。"
+    },
+    {
+        "id":  24,
+        "name":  "seas_chapter_24",
+        "name_desc":  "女子国（女儿国）",
+        "lock":  0,
+        "img":  "24101",
+        "definition_info":  "definition_seas_info_24",
+        "definition_info_desc":  "第24章现代译文",
+        "Original_info":  "女子国在巫咸北，两女子居，水周之。一曰居一门中。"
+    },
+    {
+        "id":  25,
+        "name":  "seas_chapter_25",
+        "name_desc":  "轩辕之国",
+        "lock":  0,
+        "img":  "25101",
+        "definition_info":  "definition_seas_info_25",
+        "definition_info_desc":  "第25章现代译文",
+        "Original_info":  "轩辕之国在此穷山之际，其不寿者八百岁。在女子国北。人面蛇身，尾交首上。"
+    },
+    {
+        "id":  26,
+        "name":  "seas_chapter_26",
+        "name_desc":  "穷山",
+        "lock":  0,
+        "img":  "26101",
+        "definition_info":  "definition_seas_info_26",
+        "definition_info_desc":  "第26章现代译文",
+        "Original_info":  "穷山在其北，不敢西射，畏轩辕之丘。在轩辕国北。"
+    },
+    {
+        "id":  27,
+        "name":  "seas_chapter_27",
+        "name_desc":  "乘黄（飞黄）",
+        "lock":  0,
+        "img":  "27101",
+        "definition_info":  "definition_seas_info_27",
+        "definition_info_desc":  "第27章现代译文",
+        "Original_info":  "白民之国在龙鱼北，白身被发。有乘黄，其状如狐，其背上有角，乘之寿二千岁。"
+    },
+    {
+        "id":  28,
+        "name":  "seas_chapter_28",
+        "name_desc":  "西王母（海外西经）",
+        "lock":  0,
+        "img":  "28101",
+        "definition_info":  "definition_seas_info_28",
+        "definition_info_desc":  "第28章现代译文",
+        "Original_info":  "西王母居玉山，是司天之厉及五残。"
+    },
+    {
+        "id":  29,
+        "name":  "seas_chapter_29",
+        "name_desc":  "东方句芒",
+        "lock":  0,
+        "img":  "29101",
+        "definition_info":  "definition_seas_info_29",
+        "definition_info_desc":  "第29章现代译文",
+        "Original_info":  "东方句芒，鸟身人面，乘两龙。"
+    },
+    {
+        "id":  30,
+        "name":  "seas_chapter_30",
+        "name_desc":  "烛阴（烛龙）",
+        "lock":  0,
+        "img":  "30101",
+        "definition_info":  "definition_seas_info_30",
+        "definition_info_desc":  "第30章现代译文",
+        "Original_info":  "钟山之神，名曰烛阴，视为昼，瞑为夜，吹为冬，呼为夏，不饮，不食，不息，息为风。身长千里。在无䏿之东。其为物，人面蛇身，赤色，居钟山下。"
+    },
+    {
+        "id":  31,
+        "name":  "seas_chapter_31",
+        "name_desc":  "一目国",
+        "lock":  0,
+        "img":  "31101",
+        "definition_info":  "definition_seas_info_31",
+        "definition_info_desc":  "第31章现代译文",
+        "Original_info":  "一目国在其东，一目中其面而居。一曰有手足。"
+    },
+    {
+        "id":  32,
+        "name":  "seas_chapter_32",
+        "name_desc":  "柔利国",
+        "lock":  0,
+        "img":  "32101",
+        "definition_info":  "definition_seas_info_32",
+        "definition_info_desc":  "第32章现代译文",
+        "Original_info":  "柔利国在一目东，为人一手一足，反膝，曲足居上。一云留利之国，人足反折。"
+    },
+    {
+        "id":  33,
+        "name":  "seas_chapter_33",
+        "name_desc":  "共工之臣相柳",
+        "lock":  0,
+        "img":  "33101",
+        "definition_info":  "definition_seas_info_33",
+        "definition_info_desc":  "第33章现代译文",
+        "Original_info":  "共工之臣曰相柳氏，九首，蛇身而青。不敢北射，畏共工之台。"
+    },
+    {
+        "id":  34,
+        "name":  "seas_chapter_34",
+        "name_desc":  "深目国",
+        "lock":  0,
+        "img":  "34101",
+        "definition_info":  "definition_seas_info_34",
+        "definition_info_desc":  "第34章现代译文",
+        "Original_info":  "深目国在其东，为人举一手。一曰在共工台东。"
+    },
+    {
+        "id":  35,
+        "name":  "seas_chapter_35",
+        "name_desc":  "无肠国",
+        "lock":  0,
+        "img":  "35101",
+        "definition_info":  "definition_seas_info_35",
+        "definition_info_desc":  "第35章现代译文",
+        "Original_info":  "无肠之国在深目东，其为人长肘。"
+    },
+    {
+        "id":  36,
+        "name":  "seas_chapter_36",
+        "name_desc":  "聂耳国",
+        "lock":  0,
+        "img":  "36101",
+        "definition_info":  "definition_seas_info_36",
+        "definition_info_desc":  "第36章现代译文",
+        "Original_info":  "聂耳之国在无肠国东，使两文虎，为人两手聂其耳。县居海水中。"
+    },
+    {
+        "id":  37,
+        "name":  "seas_chapter_37",
+        "name_desc":  "夸父（博父国）",
+        "lock":  0,
+        "img":  "37101",
+        "definition_info":  "definition_seas_info_37",
+        "definition_info_desc":  "第37章现代译文",
+        "Original_info":  "博父国在聂耳东，其为人大，右手操青蛇，左手操黄蛇。"
+    },
+    {
+        "id":  38,
+        "name":  "seas_chapter_38",
+        "name_desc":  "拘缨国（拘瘿国）",
+        "lock":  0,
+        "img":  "38101",
+        "definition_info":  "definition_seas_info_38",
+        "definition_info_desc":  "第38章现代译文",
+        "Original_info":  "拘缨之国在其东，一手把缨。一曰利缨之国。"
+    },
+    {
+        "id":  39,
+        "name":  "seas_chapter_39",
+        "name_desc":  "跂踵国",
+        "lock":  0,
+        "img":  "39101",
+        "definition_info":  "definition_seas_info_39",
+        "definition_info_desc":  "第39章现代译文",
+        "Original_info":  "跂踵国在拘缨东，其为人大，两足亦大。一曰大踵。"
+    },
+    {
+        "id":  40,
+        "name":  "seas_chapter_40",
+        "name_desc":  "欧丝之野",
+        "lock":  0,
+        "img":  "40101",
+        "definition_info":  "definition_seas_info_40",
+        "definition_info_desc":  "第40章现代译文",
+        "Original_info":  "欧丝之野在反踵东，一女子跪据树欧丝。"
+    },
+    {
+        "id":  41,
+        "name":  "seas_chapter_41",
+        "name_desc":  "北方禺彊（禺强）",
+        "lock":  0,
+        "img":  "41101",
+        "definition_info":  "definition_seas_info_41",
+        "definition_info_desc":  "第41章现代译文",
+        "Original_info":  "北方禺彊，人面鸟身，珥两青蛇，践两青蛇。"
+    },
+    {
+        "id":  42,
+        "name":  "seas_chapter_42",
+        "name_desc":  "大人国",
+        "lock":  0,
+        "img":  "42101",
+        "definition_info":  "definition_seas_info_42",
+        "definition_info_desc":  "第42章现代译文",
+        "Original_info":  "大人国在其北，为人大，坐而削船。一曰在䟣丘北。"
+    },
+    {
+        "id":  43,
+        "name":  "seas_chapter_43",
+        "name_desc":  "君子国",
+        "lock":  0,
+        "img":  "43101",
+        "definition_info":  "definition_seas_info_43",
+        "definition_info_desc":  "第43章现代译文",
+        "Original_info":  "君子国在其北，衣冠带剑，食兽，使二大虎在旁，其人好让不争。"
+    },
+    {
+        "id":  44,
+        "name":  "seas_chapter_44",
+        "name_desc":  "天吴（朝阳之谷）",
+        "lock":  0,
+        "img":  "44101",
+        "definition_info":  "definition_seas_info_44",
+        "definition_info_desc":  "第44章现代译文",
+        "Original_info":  "朝阳之谷，神曰天吴，是为水伯。在虹虹北两水间。其为兽也，八首人面，八足八尾，皆青黄。"
+    },
+    {
+        "id":  45,
+        "name":  "seas_chapter_45",
+        "name_desc":  "青丘国（九尾狐）",
+        "lock":  0,
+        "img":  "45101",
+        "definition_info":  "definition_seas_info_45",
+        "definition_info_desc":  "第45章现代译文",
+        "Original_info":  "青丘国在其北，其狐四足九尾。一曰在朝阳北。"
+    },
+    {
+        "id":  46,
+        "name":  "seas_chapter_46",
+        "name_desc":  "黑齿国",
+        "lock":  0,
+        "img":  "46101",
+        "definition_info":  "definition_seas_info_46",
+        "definition_info_desc":  "第46章现代译文",
+        "Original_info":  "黑齿国在其北，为人黑齿，食稻啖蛇，一赤一青，在其旁。"
+    },
+    {
+        "id":  47,
+        "name":  "seas_chapter_47",
+        "name_desc":  "雨师妾",
+        "lock":  0,
+        "img":  "47101",
+        "definition_info":  "definition_seas_info_47",
+        "definition_info_desc":  "第47章现代译文",
+        "Original_info":  "雨师妾在其北，其为人黑，两手各操一蛇，左耳有青蛇，右耳有赤蛇。"
+    },
+    {
+        "id":  48,
+        "name":  "seas_chapter_48",
+        "name_desc":  "玄股之国",
+        "lock":  0,
+        "img":  "48101",
+        "definition_info":  "definition_seas_info_48",
+        "definition_info_desc":  "第48章现代译文",
+        "Original_info":  "玄股之国在其北，其为人衣鱼食䰻，使两鸟夹之。"
+    },
+    {
+        "id":  49,
+        "name":  "seas_chapter_49",
+        "name_desc":  "毛民之国",
+        "lock":  0,
+        "img":  "49101",
+        "definition_info":  "definition_seas_info_49",
+        "definition_info_desc":  "第49章现代译文",
+        "Original_info":  "毛民之国在其北，为人身生毛。"
+    },
+    {
+        "id":  50,
+        "name":  "seas_chapter_50",
+        "name_desc":  "劳民国（教民）",
+        "lock":  0,
+        "img":  "50101",
+        "definition_info":  "definition_seas_info_50",
+        "definition_info_desc":  "第50章现代译文",
+        "Original_info":  "劳民国在其北，其为人黑。或曰教民。"
+    },
+    {
+        "id":  51,
+        "name":  "seas_chapter_51",
+        "name_desc":  "枭阳国（狒狒）",
+        "lock":  0,
+        "img":  "51101",
+        "definition_info":  "definition_seas_info_51",
+        "definition_info_desc":  "第51章现代译文",
+        "Original_info":  "枭阳国在北朐之西，其为人人面长唇，黑身有毛，反踵，见人笑亦笑，左手操管。"
+    },
+    {
+        "id":  52,
+        "name":  "seas_chapter_52",
+        "name_desc":  "兕",
+        "lock":  0,
+        "img":  "52101",
+        "definition_info":  "definition_seas_info_52",
+        "definition_info_desc":  "第52章现代译文",
+        "Original_info":  "兕在舜葬东，湘水南，其状如牛，苍黑，一角。"
+    },
+    {
+        "id":  53,
+        "name":  "seas_chapter_53",
+        "name_desc":  "苍梧山（舜葬）",
+        "lock":  0,
+        "img":  "53101",
+        "definition_info":  "definition_seas_info_53",
+        "definition_info_desc":  "第53章现代译文",
+        "Original_info":  "苍梧之山，帝舜葬于阳，帝丹朱葬于阴。"
+    },
+    {
+        "id":  54,
+        "name":  "seas_chapter_54",
+        "name_desc":  "窫窳（猰貐）",
+        "lock":  0,
+        "img":  "54101",
+        "definition_info":  "definition_seas_info_54",
+        "definition_info_desc":  "第54章现代译文",
+        "Original_info":  "窫窳居弱水中，在狌狌之西，其状如龍首，食人。"
+    },
+    {
+        "id":  55,
+        "name":  "seas_chapter_55",
+        "name_desc":  "狍鸮（饕餮）",
+        "lock":  0,
+        "img":  "55101",
+        "definition_info":  "definition_seas_info_55",
+        "definition_info_desc":  "第55章现代译文",
+        "Original_info":  "狍鸮其状如羊身人面，其目在腋下，虎齿人爪，其音如婴儿，食人。"
+    },
+    {
+        "id":  56,
+        "name":  "seas_chapter_56",
+        "name_desc":  "海内昆仑虚（帝之下都）",
+        "lock":  0,
+        "img":  "56101",
+        "definition_info":  "definition_seas_info_56",
+        "definition_info_desc":  "第56章现代译文",
+        "Original_info":  "海内昆仑之虚，在西北，帝之下都。昆仑之虚，方八百里，高万仞。上有木禾，长五寻，大五围。面有九井，以玉为槛。面有九门，门有开明兽守之。"
+    },
+    {
+        "id":  57,
+        "name":  "seas_chapter_57",
+        "name_desc":  "开明兽",
+        "lock":  0,
+        "img":  "57101",
+        "definition_info":  "definition_seas_info_57",
+        "definition_info_desc":  "第57章现代译文",
+        "Original_info":  "昆仑南渊深三百仞。开明兽身大类虎而九首，皆人面，东向立昆仑上。"
+    },
+    {
+        "id":  58,
+        "name":  "seas_chapter_58",
+        "name_desc":  "凤凰鸾鸟",
+        "lock":  0,
+        "img":  "58101",
+        "definition_info":  "definition_seas_info_58",
+        "definition_info_desc":  "第58章现代译文",
+        "Original_info":  "有鸟焉，其状如蜂，大如鸳鸯，五色而文，名曰鸾鸟。又有青鸟、琅鸟、玄鸟、黄鸟，相群自歌。"
+    },
+    {
+        "id":  59,
+        "name":  "seas_chapter_59",
+        "name_desc":  "不死树与珠树文玉树",
+        "lock":  0,
+        "img":  "59101",
+        "definition_info":  "definition_seas_info_59",
+        "definition_info_desc":  "第59章现代译文",
+        "Original_info":  "有不死树，食之乃寿。又有珠树、文玉树、玗琪树、不死树。离朱、视肉、邛邛、寻木。"
+    },
+    {
+        "id":  60,
+        "name":  "seas_chapter_60",
+        "name_desc":  "弱水与流沙",
+        "lock":  0,
+        "img":  "60101",
+        "definition_info":  "definition_seas_info_60",
+        "definition_info_desc":  "第60章现代译文",
+        "Original_info":  "弱水、青水出西南隅，以东行，又北，又西南，过毕方鸟东。流沙出钟山，西行又南行昆仑之虚。"
+    },
+    {
+        "id":  61,
+        "name":  "seas_chapter_61",
+        "name_desc":  "后稷之葬（都广之野）",
+        "lock":  0,
+        "img":  "61101",
+        "definition_info":  "definition_seas_info_61",
+        "definition_info_desc":  "第61章现代译文",
+        "Original_info":  "后稷之葬，山水环之。在氐国西。爰有膏菽、膏稻、膏黍、膏稷，百谷自生，冬夏播琴。"
+    },
+    {
+        "id":  62,
+        "name":  "seas_chapter_62",
+        "name_desc":  "建木（众帝所自上下）",
+        "lock":  0,
+        "img":  "62101",
+        "definition_info":  "definition_seas_info_62",
+        "definition_info_desc":  "第62章现代译文",
+        "Original_info":  "有木，其状如牛，引之有皮，若缨黄蛇。其叶如罗，其实如栾，其木若蓲，其名曰建木。众帝所自上下。"
+    },
+    {
+        "id":  63,
+        "name":  "seas_chapter_63",
+        "name_desc":  "犬戎国",
+        "lock":  0,
+        "img":  "63101",
+        "definition_info":  "definition_seas_info_63",
+        "definition_info_desc":  "第63章现代译文",
+        "Original_info":  "犬戎国，其为人状如人，而犬首。黄帝生苗龙，苗龙生融吾，融吾生弄明，弄明生白犬，白犬有牝牡，是为犬戎。"
+    },
+    {
+        "id":  64,
+        "name":  "seas_chapter_64",
+        "name_desc":  "穷奇（北海）",
+        "lock":  0,
+        "img":  "64101",
+        "definition_info":  "definition_seas_info_64",
+        "definition_info_desc":  "第64章现代译文",
+        "Original_info":  "穷奇状如虎，有翼，食人从首始。所食被发。在蜪犬北。为物，状如牛，猬毛，名曰穷奇，音如獆狗。"
+    },
+    {
+        "id":  65,
+        "name":  "seas_chapter_65",
+        "name_desc":  "帝尧台、帝喾台、丹朱台",
+        "lock":  0,
+        "img":  "65101",
+        "definition_info":  "definition_seas_info_65",
+        "definition_info_desc":  "第65章现代译文",
+        "Original_info":  "帝尧台、帝喾台、帝丹朱台、帝舜台，各二台，台四方，在昆仑东北。"
+    },
+    {
+        "id":  66,
+        "name":  "seas_chapter_66",
+        "name_desc":  "贰负与危（杀窫窳）",
+        "lock":  0,
+        "img":  "66101",
+        "definition_info":  "definition_seas_info_66",
+        "definition_info_desc":  "第66章现代译文",
+        "Original_info":  "贰负之臣曰危，危与贰负杀窫窳。帝乃梏之疏属之山，桎其右足，反缚两手与发，系之山上木。"
+    },
+    {
+        "id":  67,
+        "name":  "seas_chapter_67",
+        "name_desc":  "大蟹与陵鱼",
+        "lock":  0,
+        "img":  "67101",
+        "definition_info":  "definition_seas_info_67",
+        "definition_info_desc":  "第67章现代译文",
+        "Original_info":  "大蟹在海中。陵鱼人面，手足，鱼身，在海中。"
+    },
+    {
+        "id":  68,
+        "name":  "seas_chapter_68",
+        "name_desc":  "蓬莱山",
+        "lock":  0,
+        "img":  "68101",
+        "definition_info":  "definition_seas_info_68",
+        "definition_info_desc":  "第68章现代译文",
+        "Original_info":  "蓬莱山在海中。"
+    },
+    {
+        "id":  69,
+        "name":  "seas_chapter_69",
+        "name_desc":  "大人之市",
+        "lock":  0,
+        "img":  "69101",
+        "definition_info":  "definition_seas_info_69",
+        "definition_info_desc":  "第69章现代译文",
+        "Original_info":  "大人之市在海中。"
+    },
+    {
+        "id":  70,
+        "name":  "seas_chapter_70",
+        "name_desc":  "钜燕（大燕）",
+        "lock":  0,
+        "img":  "70101",
+        "definition_info":  "definition_seas_info_70",
+        "definition_info_desc":  "第70章现代译文",
+        "Original_info":  "国在流沙中者埻端、玺㬇，在昆仑虚东南。一曰海内之郡，不为郡县，在流沙中。"
+    },
+    {
+        "id":  71,
+        "name":  "seas_chapter_71",
+        "name_desc":  "琅邪台与渤海",
+        "lock":  0,
+        "img":  "71101",
+        "definition_info":  "definition_seas_info_71",
+        "definition_info_desc":  "第71章现代译文",
+        "Original_info":  "琅邪台在渤海间，琅邪之东。其北有山。一曰在海间。"
+    },
+    {
+        "id":  72,
+        "name":  "seas_chapter_72",
+        "name_desc":  "雷泽与兖水",
+        "lock":  0,
+        "img":  "72101",
+        "definition_info":  "definition_seas_info_72",
+        "definition_info_desc":  "第72章现代译文",
+        "Original_info":  "雷泽中有雷神，龙身而人头，鼓其腹。在吴西。"
+    },
+    {
+        "id":  73,
+        "name":  "seas_chapter_73",
+        "name_desc":  "少昊之国",
+        "lock":  0,
+        "img":  "73101",
+        "definition_info":  "definition_seas_info_73",
+        "definition_info_desc":  "第73章现代译文",
+        "Original_info":  "东海之外大壑，少昊之国。少昊孺帝颛顼于此，弃其琴瑟。"
+    },
+    {
+        "id":  74,
+        "name":  "seas_chapter_74",
+        "name_desc":  "大言山（日月所出之一）",
+        "lock":  0,
+        "img":  "74101",
+        "definition_info":  "definition_seas_info_74",
+        "definition_info_desc":  "第74章现代译文",
+        "Original_info":  "大荒之中，有山名曰大言，日月所出。"
+    },
+    {
+        "id":  75,
+        "name":  "seas_chapter_75",
+        "name_desc":  "中容国（中容之国）",
+        "lock":  0,
+        "img":  "75101",
+        "definition_info":  "definition_seas_info_75",
+        "definition_info_desc":  "第75章现代译文",
+        "Original_info":  "有中容之国。帝俊生中容。中容人食兽、木实，使四鸟：豹、虎、熊、罴。"
+    },
+    {
+        "id":  76,
+        "name":  "seas_chapter_76",
+        "name_desc":  "应龙（杀蚩尤与夸父）",
+        "lock":  0,
+        "img":  "76101",
+        "definition_info":  "definition_seas_info_76",
+        "definition_info_desc":  "第76章现代译文",
+        "Original_info":  "应龙处南极，杀蚩尤与夸父，不得复上，故下数旱。旱而为应龙之状，乃得大雨。"
+    },
+    {
+        "id":  77,
+        "name":  "seas_chapter_77",
+        "name_desc":  "禺䝞（东海海神）",
+        "lock":  0,
+        "img":  "77101",
+        "definition_info":  "definition_seas_info_77",
+        "definition_info_desc":  "第77章现代译文",
+        "Original_info":  "东海之渚中，有神，人面鸟身，珥两黄蛇，践两黄蛇，名曰禺䝞。黄帝生禺䝞，禺䝞生禺京。禺京处北海，禺䝞处东海，是惟海神。"
+    },
+    {
+        "id":  78,
+        "name":  "seas_chapter_78",
+        "name_desc":  "大人国（大荒）与靖人",
+        "lock":  0,
+        "img":  "78101",
+        "definition_info":  "definition_seas_info_78",
+        "definition_info_desc":  "第78章现代译文",
+        "Original_info":  "有大人之国，有大人之市。有小人国，名靖人。"
+    },
+    {
+        "id":  79,
+        "name":  "seas_chapter_79",
+        "name_desc":  "甘山（帝俊竹林）",
+        "lock":  0,
+        "img":  "79101",
+        "definition_info":  "definition_seas_info_79",
+        "definition_info_desc":  "第79章现代译文",
+        "Original_info":  "有甘山者，甘水出焉，生甘渊。"
+    },
+    {
+        "id":  80,
+        "name":  "seas_chapter_80",
+        "name_desc":  "日月山（颛顼令重黎绝地天通）",
+        "lock":  0,
+        "img":  "80101",
+        "definition_info":  "definition_seas_info_80",
+        "definition_info_desc":  "第80章现代译文",
+        "Original_info":  "大荒之中，有山名曰日月山，天枢也。吴姖天门，日月所入。有神，人面无臂，两足反属于头山，名曰嘘。颛顼生老童，老童生重及黎，帝令重献上天，令黎卬下地，下地是生噎，处于西极，以行日月星辰之行次。"
+    },
+    {
+        "id":  81,
+        "name":  "seas_chapter_81",
+        "name_desc":  "羽民（大荒）与卵民",
+        "lock":  0,
+        "img":  "81101",
+        "definition_info":  "definition_seas_info_81",
+        "definition_info_desc":  "第81章现代译文",
+        "Original_info":  "有羽民之国，其民皆生毛羽。有卵民之国，其民皆生卵。"
+    },
+    {
+        "id":  82,
+        "name":  "seas_chapter_82",
+        "name_desc":  "不姜山与不庭之山",
+        "lock":  0,
+        "img":  "82101",
+        "definition_info":  "definition_seas_info_82",
+        "definition_info_desc":  "第82章现代译文",
+        "Original_info":  "有不姜之山，黑水穷焉。又有贾山，又有言山。有不庭之山。"
+    },
+    {
+        "id":  83,
+        "name":  "seas_chapter_83",
+        "name_desc":  "盈民国与不死国",
+        "lock":  0,
+        "img":  "83101",
+        "definition_info":  "definition_seas_info_83",
+        "definition_info_desc":  "第83章现代译文",
+        "Original_info":  "有盈民之国，于姓，黍食。又有不死之国，阿姓，甘木是食。"
+    },
+    {
+        "id":  84,
+        "name":  "seas_chapter_84",
+        "name_desc":  "蜮山（蜮民）",
+        "lock":  0,
+        "img":  "84101",
+        "definition_info":  "definition_seas_info_84",
+        "definition_info_desc":  "第84章现代译文",
+        "Original_info":  "有蜮山者，有蜮民之国，桑姓，食黍，射蜮是食。有人方扜弓射黄蛇，名曰蜮人。"
+    },
+    {
+        "id":  85,
+        "name":  "seas_chapter_85",
+        "name_desc":  "宋山（枫木与丹朱）",
+        "lock":  0,
+        "img":  "85101",
+        "definition_info":  "definition_seas_info_85",
+        "definition_info_desc":  "第85章现代译文",
+        "Original_info":  "有宋山者，有赤蛇，名曰育蛇。有木生山上，名曰枫木。枫木，蚩尤所弃其桎梏，是为枫木。"
+    },
+    {
+        "id":  86,
+        "name":  "seas_chapter_86",
+        "name_desc":  "祖状之尸与焦侥",
+        "lock":  0,
+        "img":  "86101",
+        "definition_info":  "definition_seas_info_86",
+        "definition_info_desc":  "第86章现代译文",
+        "Original_info":  "有祖状之尸，方齿虎尾。有焦侥之国，几姓，黍食。"
+    },
+    {
+        "id":  87,
+        "name":  "seas_chapter_87",
+        "name_desc":  "寿麻国",
+        "lock":  0,
+        "img":  "87101",
+        "definition_info":  "definition_seas_info_87",
+        "definition_info_desc":  "第87章现代译文",
+        "Original_info":  "有寿麻之国。南岳娶州山女，名曰女虔。女虔生季格，季格生寿麻。寿麻正立无景，疾呼无响。爰有大暑，不可以往。"
+    },
+    {
+        "id":  88,
+        "name":  "seas_chapter_88",
+        "name_desc":  "盖犹山与猴王",
+        "lock":  0,
+        "img":  "88101",
+        "definition_info":  "definition_seas_info_88",
+        "definition_info_desc":  "第88章现代译文",
+        "Original_info":  "有盖犹之山者，其上有甘柤，枝干皆赤，黄叶白华黑实。东又有甘华，枝干皆赤，黄叶。有狙，状如猿，黑臂，抵虎，名曰狙。"
+    },
+    {
+        "id":  89,
+        "name":  "seas_chapter_89",
+        "name_desc":  "不周山（共工怒触）",
+        "lock":  0,
+        "img":  "89101",
+        "definition_info":  "definition_seas_info_89",
+        "definition_info_desc":  "第89章现代译文",
+        "Original_info":  "西北海之外，大荒之隅，有山而不合，名曰不周，有两黄兽守之。有水曰寒暑之水。共工之臣曰相柳……有禹攻共工国山。"
+    },
+    {
+        "id":  90,
+        "name":  "seas_chapter_90",
+        "name_desc":  "女娲之肠（女娲化生）",
+        "lock":  0,
+        "img":  "90101",
+        "definition_info":  "definition_seas_info_90",
+        "definition_info_desc":  "第90章现代译文",
+        "Original_info":  "有神十人，名曰女娲之肠，化为神，处栗广之野，横道而处。"
+    },
+    {
+        "id":  91,
+        "name":  "seas_chapter_91",
+        "name_desc":  "石夷（西方神）",
+        "lock":  0,
+        "img":  "91101",
+        "definition_info":  "definition_seas_info_91",
+        "definition_info_desc":  "第91章现代译文",
+        "Original_info":  "有人名曰石夷，来风曰韦，处西北隅，以司日月之长短。"
+    },
+    {
+        "id":  92,
+        "name":  "seas_chapter_92",
+        "name_desc":  "西周之国（稷与叔均）",
+        "lock":  0,
+        "img":  "92101",
+        "definition_info":  "definition_seas_info_92",
+        "definition_info_desc":  "第92章现代译文",
+        "Original_info":  "有西周之国，姬姓，食谷。帝俊生后稷，稷降以百谷。稷之弟曰台玺，生叔均。叔均是代其父及稷播百谷，始作耕。"
+    },
+    {
+        "id":  93,
+        "name":  "seas_chapter_93",
+        "name_desc":  "太子长琴（祝融之子）",
+        "lock":  0,
+        "img":  "93101",
+        "definition_info":  "definition_seas_info_93",
+        "definition_info_desc":  "第93章现代译文",
+        "Original_info":  "有榣山，其上有人，号曰太子长琴。颛顼生老童，老童生祝融，祝融生太子长琴，是处榣山，始作乐风。"
+    },
+    {
+        "id":  94,
+        "name":  "seas_chapter_94",
+        "name_desc":  "常羲浴月（生月十有二）",
+        "lock":  0,
+        "img":  "94101",
+        "definition_info":  "definition_seas_info_94",
+        "definition_info_desc":  "第94章现代译文",
+        "Original_info":  "有女子方浴月。帝俊妻常羲，生月十有二，此始浴之。"
+    },
+    {
+        "id":  95,
+        "name":  "seas_chapter_95",
+        "name_desc":  "夏后开（启）得乐",
+        "lock":  0,
+        "img":  "95101",
+        "definition_info":  "definition_seas_info_95",
+        "definition_info_desc":  "第95章现代译文",
+        "Original_info":  "西南海之外，赤水之南，流沙之西，有人珥两青蛇，乘两龙，名曰夏后开。开上三嫔于天，得《九辩》与《九歌》以下。此天穆之野，高二千仞，开焉始得歌《九招》。"
+    },
+    {
+        "id":  96,
+        "name":  "seas_chapter_96",
+        "name_desc":  "偏句与常羊（刑天所葬）",
+        "lock":  0,
+        "img":  "96101",
+        "definition_info":  "definition_seas_info_96",
+        "definition_info_desc":  "第96章现代译文",
+        "Original_info":  "大荒之中，有山名曰常羊之山。有偏句、常羊之山。"
+    },
+    {
+        "id":  97,
+        "name":  "seas_chapter_97",
+        "name_desc":  "附禺山（颛顼与九嫔葬）",
+        "lock":  0,
+        "img":  "97101",
+        "definition_info":  "definition_seas_info_97",
+        "definition_info_desc":  "第97章现代译文",
+        "Original_info":  "东北海之外，大荒之中，河水之间，附禺之山，帝颛顼与九嫔葬焉。有鸱久、文贝、离俞、鸾鸟、凤鸟……皆出卫于山。"
+    },
+    {
+        "id":  98,
+        "name":  "seas_chapter_98",
+        "name_desc":  "胡不与国与叔歜国",
+        "lock":  0,
+        "img":  "98101",
+        "definition_info":  "definition_seas_info_98",
+        "definition_info_desc":  "第98章现代译文",
+        "Original_info":  "有胡不与之国，烈姓，黍食。有大人之国，有大青蛇，朱身，食尘。有叔歜国，颛顼之子，黍食，使四鸟：虎、豹、熊、罴。"
+    },
+    {
+        "id":  99,
+        "name":  "seas_chapter_99",
+        "name_desc":  "犬戎（大荒，黄帝生苗龙系）",
+        "lock":  0,
+        "img":  "99101",
+        "definition_info":  "definition_seas_info_99",
+        "definition_info_desc":  "第99章现代译文",
+        "Original_info":  "有犬戎国。有神，人面兽身，名曰犬戎。黄帝生苗龙，苗龙生融吾，融吾生弄明，弄明生白犬，白犬有牝牡，是为犬戎。"
+    },
+    {
+        "id":  100,
+        "name":  "seas_chapter_100",
+        "name_desc":  "九凤与强良",
+        "lock":  0,
+        "img":  "100101&100102",
+        "definition_info":  "definition_seas_info_100",
+        "definition_info_desc":  "第100章现代译文",
+        "Original_info":  "大荒之中，有山名曰北极天柜，海水北注焉。有神，九首人面鸟身，名曰九凤。又有神，衔蛇操蛇，其状虎首人身，四蹄长肘，名曰强良。"
+    },
+    {
+        "id":  101,
+        "name":  "seas_chapter_101",
+        "name_desc":  "夸父追日（大荒北）",
+        "lock":  0,
+        "img":  "101101",
+        "definition_info":  "definition_seas_info_101",
+        "definition_info_desc":  "第101章现代译文",
+        "Original_info":  "大荒之中，有山名曰成都载天。有人珥两黄蛇，把两黄蛇，名曰夸父。后土生信，信生夸父。夸父不量力，欲追日景，逮之于禺谷。将饮河而不足也，将走大泽，未至，死于此。"
+    },
+    {
+        "id":  102,
+        "name":  "seas_chapter_102",
+        "name_desc":  "帝舜与帝丹朱之台（大荒北）",
+        "lock":  0,
+        "img":  "102101",
+        "definition_info":  "definition_seas_info_102",
+        "definition_info_desc":  "第102章现代译文",
+        "Original_info":  "有山名曰融父山，顺水入焉。有人名曰犬戎。有帝俊竹林，在焉，大可为舟。有赤泽水，其中生朱木。有先民之山，有槃木千里。有叔歜国。"
+    },
+    {
+        "id":  103,
+        "name":  "seas_chapter_103",
+        "name_desc":  "苗民与颛顼系",
+        "lock":  0,
+        "img":  "103101",
+        "definition_info":  "definition_seas_info_103",
+        "definition_info_desc":  "第103章现代译文",
+        "Original_info":  "有苗民。颛顼生驩头，驩头生苗民。苗民厘姓，食肉。"
+    },
+    {
+        "id":  104,
+        "name":  "seas_chapter_104",
+        "name_desc":  "钉灵之国",
+        "lock":  0,
+        "img":  "104101",
+        "definition_info":  "definition_seas_info_104",
+        "definition_info_desc":  "第104章现代译文",
+        "Original_info":  "有钉灵之国，其民从膝已下有毛，马蹄善走。"
+    },
+    {
+        "id":  105,
+        "name":  "seas_chapter_105",
+        "name_desc":  "朝鲜与天毒",
+        "lock":  0,
+        "img":  "105101",
+        "definition_info":  "definition_seas_info_105",
+        "definition_info_desc":  "第105章现代译文",
+        "Original_info":  "东海之内，北海之隅，有国名曰朝鲜、天毒，其人水居，偎人爱之。"
+    },
+    {
+        "id":  106,
+        "name":  "seas_chapter_106",
+        "name_desc":  "韩流（帝颛顼之父）",
+        "lock":  0,
+        "img":  "106101",
+        "definition_info":  "definition_seas_info_106",
+        "definition_info_desc":  "第106章现代译文",
+        "Original_info":  "流沙之东，黑水之西，有朝云之国、司彘之国。黄帝妻雷祖，生昌意。昌意降处若水，生韩流。韩流擢首、谨耳、人面、豕喙、麟身、渠股、豚止，取淖子曰阿女，生帝颛顼。"
+    },
+    {
+        "id":  107,
+        "name":  "seas_chapter_107",
+        "name_desc":  "巴蛇吞象",
+        "lock":  0,
+        "img":  "107101",
+        "definition_info":  "definition_seas_info_107",
+        "definition_info_desc":  "第107章现代译文",
+        "Original_info":  "有巴遂之山。又有朱卷之国。有黑蛇，青首，食象。巴蛇食象，三岁而出其骨，君子服之，无心腹之疾。"
+    },
+    {
+        "id":  108,
+        "name":  "seas_chapter_108",
+        "name_desc":  "后稷与台玺（农耕之始）",
+        "lock":  0,
+        "img":  "108101",
+        "definition_info":  "definition_seas_info_108",
+        "definition_info_desc":  "第108章现代译文",
+        "Original_info":  "西南黑水之间，有都广之野，后稷葬焉。其城方三百里，盖天地之中，素女所出也。大暤爰过，黄帝所为。后稷是播百谷。"
+    },
+    {
+        "id":  109,
+        "name":  "seas_chapter_109",
+        "name_desc":  "鲧禹治水（海内经核心）",
+        "lock":  0,
+        "img":  "109101&109102",
+        "definition_info":  "definition_seas_info_109",
+        "definition_info_desc":  "第109章现代译文",
+        "Original_info":  "洪水滔天。鲧窃帝之息壤以堙洪水，不待帝命。帝令祝融杀鲧于羽郊。鲧复生禹。帝乃命禹卒布土以定九州。"
+    },
+    {
+        "id":  110,
+        "name":  "seas_chapter_110",
+        "name_desc":  "鸱久与猩猩",
+        "lock":  0,
+        "img":  "110101",
+        "definition_info":  "definition_seas_info_110",
+        "definition_info_desc":  "第110章现代译文",
+        "Original_info":  "有禺中之国。有列襄之国。有灵山，有赤蛇在木上，名曰蠕蛇，木则枫木。有猩猩之兽，人面，长唇，能言。"
+    },
+    {
+        "id":  111,
+        "name":  "seas_chapter_111",
+        "name_desc":  "钉灵与匈奴",
+        "lock":  0,
+        "img":  "111101",
+        "definition_info":  "definition_seas_info_111",
+        "definition_info_desc":  "第111章现代译文",
+        "Original_info":  "北海之内，有山，名曰幽都之山，黑水出焉。其上有玄鸟、玄蛇、玄虎、玄狐蓬尾。有大玄之山。有玄丘之民。有大幽之国。有赤胫之民。"
     }
 ]
