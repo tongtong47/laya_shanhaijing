@@ -37,6 +37,45 @@ export class Scene_load extends Laya.Script {
     /** 粒子颜色（金色系） */
     private static readonly PARTICLE_COLORS: string[] = ["#FFD700", "#FFC107", "#FFE066", "#FFB300", "#FFF3B0", "#FFAA00"];
 
+    /** assets/resources 下需要在启动阶段预加载的全部运行时资源。 */
+    private static readonly RESOURCE_URLS: string[] = [
+        "resources/Bgms/Mounts.mp3",
+        "resources/Bgms/Myths.mp3",
+        "resources/Bgms/Seas.mp3",
+        "resources/Bgms/Title_1.mp3",
+        "resources/Bgms/Title_2.mp3",
+        "resources/Gameinfo/dic_language.json",
+        "resources/Gameinfo/dic_mountains.json",
+        "resources/Gameinfo/dic_myths.json",
+        "resources/Gameinfo/dic_seas.json",
+        "resources/UI/Basic/bg.png",
+        "resources/UI/Basic/Lock.png",
+        "resources/UI/Basic/Mountains.png",
+        "resources/UI/Basic/Myth.png",
+        "resources/UI/Basic/return.png",
+        "resources/UI/Basic/Secas.png",
+        "resources/UI/Loads/load_bg.png",
+        "resources/UI/Loads/Logo.png",
+        "resources/UI/Loads/progress$bar.png",
+        "resources/UI/Loads/progress.png",
+        "resources/UI/Mountains/Botton_Definition_a.png",
+        "resources/UI/Mountains/Botton_Definition_m.png",
+        "resources/UI/Mountains/Botton_Original_a.png",
+        "resources/UI/Mountains/Botton_Original_m.png",
+        "resources/UI/Mountains/Infobg.png",
+        "resources/UI/Mountains/itembg.png",
+        "resources/UI/Scene_Title/background.png",
+        "resources/UI/Scene_World/bigmap.png",
+        "resources/UI/World_Menu/Botton_Home_a.png",
+        "resources/UI/World_Menu/Botton_Home_m.png",
+        "resources/UI/World_Menu/Botton_Mountains_a.png",
+        "resources/UI/World_Menu/Botton_Mountains_m.png",
+        "resources/UI/World_Menu/Botton_Myth_a.png",
+        "resources/UI/World_Menu/Botton_Myth_m.png",
+        "resources/UI/World_Menu/Botton_Seas_a.png",
+        "resources/UI/World_Menu/Botton_Seas_m.png",
+    ];
+
     // ==================== 生命周期 ====================
 
     onAwake(): void {
@@ -124,49 +163,18 @@ export class Scene_load extends Laya.Script {
 
     // ==================== 资源加载 ====================
 
-    /**
-     * 主加载流程：图片、视频、JSON 分开加载。
-     * 目前资源清单仅包含 Loads 目录下的四张图片，视频与 JSON 暂无，可随时补充。
-     */
+    /** 主加载流程：预加载 resources 文件夹中的全部运行时资源。 */
     private async _startLoad(): Promise<void> {
         try {
-            // ---- 图片资源（当前需要加载的四张图）----
-            const imgUrls: string[] = [
-                "resources/UI/Loads/load_bg.png",
-                "resources/UI/Loads/Logo.png",
-                "resources/UI/Loads/progress.png",
-                "resources/UI/Loads/progress$bar.png",
-            ];
-            // ---- 视频资源（暂无，留空占位）----
-            const videoUrls: string[] = [];
-            // ---- JSON 资源（暂无，留空占位）----
-            const jsonUrls: string[] = [];
-
-            // 各类型权重，总进度从 1% 到 100% 按权重分配
-            const weight = { img: 0.8, video: 0.1, json: 0.1 };
-            let base = 0.01; // 从 1% 开始
-
-            // 1) 图片
-            const imgs = await this.loadImages(imgUrls, (p: number) => {
-                this._setProgress(base + p * weight.img);
-            });
-            base += weight.img;
-            this._setProgress(base);
-
-            // 2) 视频
-            const videos = await this.loadVideos(videoUrls, (p: number) => {
-                this._setProgress(base + p * weight.video);
-            });
-            base += weight.video;
-            this._setProgress(base);
-
-            // 3) JSON
-            const jsons = await this.loadJsons(jsonUrls, (p: number) => {
-                this._setProgress(base + p * weight.json);
-            });
+            const results = await this._loadAllResources(Scene_load.RESOURCE_URLS);
             this._setProgress(1);
 
-            console.log("资源加载完成", { imgs, videos, jsons });
+            const failed = results.filter((result) => result === null).length;
+            console.log("resources 资源加载完成", {
+                total: Scene_load.RESOURCE_URLS.length,
+                succeeded: results.length - failed,
+                failed,
+            });
             // 跳转前停掉 Logo 金色粒子，避免动画残留到标题场景
             this._stopParticles();
             // 加载完成后跳转进入标题场景
@@ -174,6 +182,32 @@ export class Scene_load extends Laya.Script {
         } catch (e) {
             console.error("资源加载失败：", e);
         }
+    }
+
+    /** 按扩展名选择加载类型，并按文件数量更新总进度。 */
+    private async _loadAllResources(urls: string[]): Promise<any[]> {
+        const results: any[] = [];
+        const total = urls.length;
+        for (let i = 0; i < total; i++) {
+            const url = urls[i];
+            try {
+                const result = await Laya.loader.load(url, null, null, this._getLoaderType(url));
+                results.push(result);
+            } catch (e) {
+                console.error(`加载资源失败：${url}`, e);
+                results.push(null);
+            }
+            this._setProgress(0.01 + ((i + 1) / total) * 0.99);
+        }
+        return results;
+    }
+
+    private _getLoaderType(url: string): string {
+        const extension = url.substring(url.lastIndexOf(".") + 1).toLowerCase();
+        if (extension === "json") return Laya.Loader.JSON;
+        if (extension === "mp3" || extension === "wav" || extension === "ogg") return Laya.Loader.SOUND;
+        if (extension === "mp4" || extension === "webm") return Laya.Loader.VIDEO;
+        return Laya.Loader.IMAGE;
     }
 
     /** 跳转进入标题场景 scene_title */
