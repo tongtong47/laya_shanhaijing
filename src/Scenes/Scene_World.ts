@@ -6,6 +6,7 @@ import { I18N } from "../Data/I18N";
 export class Scene_World extends Laya.Script {
 
     private static readonly SECTION_BGMS: Record<number, string> = {
+        0: "resources/Bgms/Home.mp3",
         1: "resources/Bgms/Mounts.mp3",
         2: "resources/Bgms/Seas.mp3",
         3: "resources/Bgms/Myths.mp3",
@@ -85,6 +86,7 @@ export class Scene_World extends Laya.Script {
     onStart(): void {
         this._buildTabs();
         this._selectTab(this._currentTab);
+        this._switchSectionBgm(this._currentTab);
         this._bindTabClicks();
         this._enableBigmapDrag();
 
